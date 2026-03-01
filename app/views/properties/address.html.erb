@@ -13,24 +13,24 @@
 
             <%= form.fields_for :address do |address_form| %>
               <%= address_form.text_field :line1,
-                    label: "Address Line 1",
+                    label: t(".address_line_1"),
                     placeholder: "123 Main Street" %>
 
               <div class="flex items-center gap-2">
                 <%= address_form.text_field :locality,
-                      label: "City",
+                      label: t(".city"),
                       placeholder: "San Francisco" %>
                 <%= address_form.text_field :region,
-                      label: "State/Region",
+                      label: t(".state_region"),
                       placeholder: "CA" %>
               </div>
 
               <div class="flex items-center gap-2">
                 <%= address_form.text_field :postal_code,
-                      label: "Postal Code",
+                      label: t(".postal_code"),
                       placeholder: "12345" %>
                 <%= address_form.text_field :country,
-                      label: "Country",
+                      label: t(".country"),
                       placeholder: "USA" %>
               </div>
             <% end %>

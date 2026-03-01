@@ -26,7 +26,7 @@
           <div class="flex items-center justify-between gap-3">
             <code id="api-key-display" class="font-mono text-sm text-primary break-all" data-clipboard-target="source"><%= @current_api_key.plain_key %></code>
             <%= render DS::Button.new(
-              text: "Copy API Key",
+              text: t(".copy_api_key"),
               variant: "ghost",
               icon: "copy",
               data: { action: "clipboard#copy" }
@@ -45,7 +45,7 @@
 
       <div class="flex justify-end pt-4 border-t border-primary">
         <%= render DS::Link.new(
-          text: "Continue to API Key Settings",
+          text: t(".continue_to_settings"),
           href: settings_api_key_path,
           variant: "primary"
         ) %>
@@ -105,7 +105,7 @@
           <div class="flex items-center justify-between gap-3">
             <code id="api-key-display" class="font-mono text-sm text-primary break-all" data-clipboard-target="source"><%= @current_api_key.plain_key %></code>
             <%= render DS::Button.new(
-              text: "Copy API Key",
+              text: t(".copy_api_key"),
               variant: "ghost",
               icon: "copy",
               data: { action: "clipboard#copy" }
@@ -124,13 +124,13 @@
 
       <div class="flex flex-col sm:flex-row gap-3 pt-4 border-t border-primary">
         <%= render DS::Link.new(
-          text: "Create New Key",
+          text: t(".create_new_key"),
           href: new_settings_api_key_path(regenerate: true),
           variant: "secondary"
         ) %>
 
         <%= render DS::Button.new(
-          text: "Revoke Key",
+          text: t(".revoke_key"),
           href: settings_api_key_path,
           method: :delete,
           variant: "destructive",
@@ -182,7 +182,7 @@
 
       <div class="flex justify-start">
         <%= render DS::Link.new(
-          text: "Create API Key",
+          text: t(".create_api_key"),
           href: new_settings_api_key_path,
           variant: "primary"
         ) %>

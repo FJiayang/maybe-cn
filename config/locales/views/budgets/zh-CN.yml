@@ -1,0 +1,63 @@
+---
+zh-CN:
+  budgets:
+    budget_donut:
+      of_budgeted: "共 %{amount}"
+      new_budget: 新建预算
+    show:
+      title: 预算
+      new_budget: 新建预算
+      import: 导入
+      new_rule: 新建规则
+      edit_rules: 编辑规则
+      edit_categories: 编辑分类
+      edit_tags: 编辑标签
+      edit_merchants: 编辑商家
+      edit_imports: 编辑导入
+      transaction: 交易
+      transactions: 交易
+      total_transactions: 总交易数
+      income: 收入
+      expenses: 支出
+      category: 分类
+      amount: 金额
+      search_placeholder: 搜索交易...
+      filter: 筛选
+      clear_filters: 清除筛选
+      no_entries_found: 未找到条目
+      try_adding_entry: 尝试添加条目、编辑筛选条件或优化搜索
+      budgeted: 已预算
+      actual: 实际
+      categories: 分类
+    edit:
+      setup_title: 设置预算
+      setup_description: 在下面输入你的月收入和计划支出以设置预算。
+      budgeted_spending: 预算支出
+      expected_income: 预期收入
+      autosuggest_title: 自动建议收入和支出预算
+      autosuggest_description: 这将基于交易历史。AI 可能会出错，请在继续之前验证。
+      continue: 继续
+    budget_header:
+      today: 今天
+    budget_nav:
+      setup: 设置
+      categories: 分类
+    budget_categories:
+      categories: 分类
+      amount: 金额
+    budgeted_summary:
+      expected_income: 预期收入
+      earned: 已赚取
+      left: 剩余
+      over: 超出
+      budgeted: 已预算
+      spent: 已支出
+    actuals_summary:
+      income: 收入
+      expenses: 支出
+    over_allocation_warning:
+      title: 预算超配
+      description: 你的预算已超配。请修复你的分配。
+      fix_allocations: 修复分配
+    picker:
+      year: 年份

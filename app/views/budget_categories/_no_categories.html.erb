@@ -7,12 +7,12 @@
 
     <div class="flex items-center gap-2">
       <%= render DS::Button.new(
-        text: "Use defaults (recommended)",
+        text: t(".use_defaults_recommended"),
         href: bootstrap_categories_path,
       ) %>
 
       <%= render DS::Link.new(
-        text: "New category",
+        text: t(".new_category"),
         variant: "outline",
         icon: "plus",
         href: new_category_path,

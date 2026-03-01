@@ -16,8 +16,8 @@
 
     <div class="mx-auto max-w-lg">
       <%= styled_form_with model: @budget, class: "space-y-3", data: { controller: "budget-form" } do |f| %>
-        <%= f.money_field :budgeted_spending, label: "Budgeted spending", required: true, disable_currency: true %>
-        <%= f.money_field :expected_income, label: "Expected income", required: true, disable_currency: true %>
+        <%= f.money_field :budgeted_spending, label: t(".budgeted_spending"), required: true, disable_currency: true %>
+        <%= f.money_field :expected_income, label: t(".expected_income"), required: true, disable_currency: true %>
 
         <% if @budget.estimated_income && @budget.estimated_spending %>
           <div class="border border-tertiary rounded-lg p-3 flex">

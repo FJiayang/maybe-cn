@@ -27,7 +27,7 @@
         <!-- Primary CTA -->
         <div class="text-center space-y-4">
           <%= render DS::Link.new(
-            text: "View Setup Guide",
+            text: t(".view_setup_guide"),
             href: "https://github.com/maybe-finance/maybe/blob/main/docs/hosting/docker.md",
             variant: "primary",
             size: "lg",
@@ -45,7 +45,7 @@
         <div class="text-center space-y-3">
           <p class="text-sm text-muted">Once you've configured Redis, refresh this page to continue.</p>
           <%= render DS::Button.new(
-            text: "Refresh Page",
+            text: t(".refresh_page"),
             variant: "secondary",
             icon: "refresh-cw",
             type: "button",

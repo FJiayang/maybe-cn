@@ -11,6 +11,8 @@ zh-CN:
       missing_historical_data: 缺少历史数据
       missing_historical_data_desc: Maybe 使用 Synth API 获取历史汇率、证券价格等。此数据是计算准确历史账户余额所必需的。
       add_synth_key: 在此处添加你的 Synth API 密钥
+    accountable_group:
+      new_account_type: "新建 %{type}"
     account:
       troubleshoot: 故障排除
     chart:

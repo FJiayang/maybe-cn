@@ -33,7 +33,7 @@
         <p class="text-sm font-medium text-primary">No cash flow data for this time period</p>
         <p class="text-secondary text-sm">Add transactions to display cash flow data or expand the time period</p>
         <%= render DS::Link.new(
-          text: "Add transaction",
+          text: t(".add_transaction"),
           icon: "plus",
           href: new_transaction_path,
           frame: :modal

@@ -4,7 +4,7 @@
 
     <div class="flex justify-end gap-2">
       <%= render DS::Link.new(
-        text: "Account Settings",
+        text: t(".account_settings"),
         icon: "settings",
         variant: "ghost",
         href: settings_profile_path,
@@ -46,7 +46,7 @@
 
       <div class="text-center space-y-2">
         <%= render DS::Button.new(
-          text: "Subscribe and unlock Maybe",
+          text: t(".subscribe_and_unlock"),
           variant: "primary",
           full_width: true
         ) %>

@@ -12,7 +12,7 @@
             <%= tag.p t(".no_accounts"), class: "text-sm" %>
 
             <%= render DS::Link.new(
-              text: "Create account",
+              text: t(".create_account"),
               variant: "primary",
               href: new_account_path(return_to: import_confirm_path(import)),
               frame: :modal

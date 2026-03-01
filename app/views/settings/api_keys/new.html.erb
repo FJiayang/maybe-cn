@@ -4,8 +4,8 @@
   <%= styled_form_with model: @api_key, url: settings_api_key_path, class: "space-y-4" do |form| %>
     <%= form.text_field :name,
         placeholder: "e.g., My Budget App, Portfolio Tracker",
-        label: "API Key Name",
-        help_text: "Choose a descriptive name to help you identify this key later." %>
+        label: t(".api_key_name"),
+        help_text: t(".api_key_help_text") %>
 
     <div>
       <%= form.label :scopes, "Permissions", class: "block text-sm font-medium text-primary mb-2" %>
@@ -51,7 +51,7 @@
       ) %>
 
       <%= render DS::Button.new(
-        text: "Create API Key",
+        text: t(".create_api_key"),
         variant: "primary",
         type: "submit"
       ) %>
