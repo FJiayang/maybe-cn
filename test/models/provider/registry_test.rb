@@ -89,10 +89,14 @@ class Provider::RegistryTest < ActiveSupport::TestCase
 
   # Concept-based provider query tests
   test "returns providers for exchange_rates concept" do
-    registry = Provider::Registry.for_concept(:exchange_rates)
-    providers = registry.providers
+    Setting.stubs(:synth_api_key).returns("test-api-key")
 
-    assert providers.any? { |p| p.is_a?(Provider::Synth) }
+    with_env_overrides SYNTH_API_KEY: nil do
+      registry = Provider::Registry.for_concept(:exchange_rates)
+      providers = registry.providers
+
+      assert providers.any? { |p| p.is_a?(Provider::Synth) }
+    end
   end
 
   test "returns providers for llm concept" do
