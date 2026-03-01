@@ -1,0 +1,52 @@
+<%# app/views/settings/hostings/_openai_settings.html.erb %>
+<div class="space-y-4">
+  <div>
+    <h2 class="font-medium mb-1"><%= t(".title") %></h2>
+    <% if ENV["OPENAI_ACCESS_TOKEN"].present? %>
+      <p class="text-sm text-secondary"><%= t(".configured_via_env") %></p>
+    <% else %>
+      <p class="text-secondary text-sm mb-4"><%= t(".description") %></p>
+    <% end %>
+  </div>
+
+  <%= styled_form_with model: Setting.new,
+                       url: settings_hosting_path,
+                       method: :patch,
+                       data: {
+                         controller: "auto-submit-form",
+                         "auto-submit-form-trigger-event-value": "blur"
+                       } do |form| %>
+    <%= form.text_field :openai_access_token,
+                        label: t(".access_token_label"),
+                        type: "password",
+                        placeholder: t(".access_token_placeholder"),
+                        value: ENV.fetch("OPENAI_ACCESS_TOKEN", Setting.openai_access_token),
+                        disabled: ENV["OPENAI_ACCESS_TOKEN"].present?,
+                        data: { "auto-submit-form-target": "auto" } %>
+
+    <%= form.text_field :openai_base_url,
+                        label: t(".base_url_label"),
+                        placeholder: t(".base_url_placeholder"),
+                        value: ENV.fetch("OPENAI_BASE_URL", Setting.openai_base_url),
+                        disabled: ENV["OPENAI_BASE_URL"].present?,
+                        data: { "auto-submit-form-target": "auto" } %>
+
+    <%= form.text_field :openai_model_id,
+                        label: t(".model_id_label"),
+                        placeholder: t(".model_id_placeholder"),
+                        value: ENV.fetch("OPENAI_MODEL_ID", Setting.openai_model_id),
+                        disabled: ENV["OPENAI_MODEL_ID"].present?,
+                        data: { "auto-submit-form-target": "auto" } %>
+  <% end %>
+
+  <div class="bg-surface-inset rounded-lg p-4 text-sm text-secondary">
+    <p class="font-medium text-primary mb-2"><%= t(".supported_providers") %></p>
+    <ul class="list-disc list-inside space-y-1">
+      <li>OpenAI (https://api.openai.com/v1)</li>
+      <li>DeepSeek (https://api.deepseek.com/)</li>
+      <li>Groq (https://api.groq.com/openai)</li>
+      <li>Gemini (https://generativelanguage.googleapis.com/v1beta/openai/)</li>
+      <li>Ollama (http://localhost:11434/v1)</li>
+    </ul>
+  </div>
+</div>

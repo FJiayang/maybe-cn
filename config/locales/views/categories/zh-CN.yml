@@ -1,0 +1,12 @@
+---
+zh-CN:
+  categories:
+    index:
+      title: 分类
+      add_category: 添加分类
+      income: 收入
+      expense: 支出
+    form:
+      name: 名称
+      color: 颜色
+      parent: 父分类

@@ -16,6 +16,7 @@ en:
         invites: Invite Codes
         title: Self-Hosting
         danger_zone: Danger Zone
+        ai: AI Settings
         clear_cache: Clear data cache
         clear_cache_warning: Clearing the data cache will remove all exchange rates, security prices, account balances, and other data. This will not delete accounts, transactions, categories, or other user-owned data.
         confirm_clear_cache:
@@ -28,6 +29,17 @@ en:
         placeholder: Enter your API key here
         plan: "%{plan} plan"
         title: Synth Settings
+      openai_settings:
+        title: OpenAI Configuration
+        description: Configure OpenAI or compatible API providers
+        configured_via_env: OpenAI is configured via environment variable
+        access_token_label: API Key
+        access_token_placeholder: Enter your API key
+        base_url_label: API Base URL
+        base_url_placeholder: https://api.openai.com/v1
+        model_id_label: Model ID
+        model_id_placeholder: gpt-4.1
+        supported_providers: Supported Providers
       update:
         failure: Invalid setting value
         success: Settings updated

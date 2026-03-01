@@ -62,10 +62,11 @@ class Provider::Registry
 
       def openai
         access_token = ENV.fetch("OPENAI_ACCESS_TOKEN", Setting.openai_access_token)
+        base_url = ENV.fetch("OPENAI_BASE_URL", Setting.openai_base_url)
 
         return nil unless access_token.present?
 
-        Provider::Openai.new(access_token)
+        Provider::Openai.new(access_token, base_url: base_url.presence)
       end
   end
 

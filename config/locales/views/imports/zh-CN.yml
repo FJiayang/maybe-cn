@@ -1,0 +1,12 @@
+---
+zh-CN:
+  imports:
+    index:
+      title: 数据导入
+      new_import: 新建导入
+    show:
+      title: 导入详情
+      process: 处理导入
+    form:
+      file: 文件
+      type: 导入类型

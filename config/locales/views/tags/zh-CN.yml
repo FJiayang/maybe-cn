@@ -1,0 +1,8 @@
+---
+zh-CN:
+  tags:
+    index:
+      title: 标签
+      add_tag: 添加标签
+    form:
+      name: 名称

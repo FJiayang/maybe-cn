@@ -1,0 +1,16 @@
+---
+zh-CN:
+  chats:
+    index:
+      title: AI 助手
+      new_chat: 新对话
+    new:
+      title: 新对话
+    show:
+      placeholder: 输入你的问题...
+      send: 发送
+    ai_consent:
+      title: 启用 AI 功能
+      description: AI 功能需要发送你的财务数据到外部服务进行分析。
+      enable: 启用 AI
+      disable: 暂不启用

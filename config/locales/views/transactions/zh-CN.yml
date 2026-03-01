@@ -1,0 +1,19 @@
+---
+zh-CN:
+  transactions:
+    index:
+      title: 交易
+      search: 搜索交易
+      filter: 筛选
+      clear_filters: 清除筛选
+    show:
+      title: 交易详情
+      edit: 编辑
+      delete: 删除
+    form:
+      amount: 金额
+      date: 日期
+      description: 描述
+      category: 分类
+      tags: 标签
+      merchant: 商家
