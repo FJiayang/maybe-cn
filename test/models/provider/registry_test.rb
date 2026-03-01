@@ -1,6 +1,17 @@
 require "test_helper"
 
 class Provider::RegistryTest < ActiveSupport::TestCase
+  setup do
+    @original_stubs = []
+  end
+
+  teardown do
+    @original_stubs.each do |stub|
+      stub.unstub
+    end
+    Setting.unstub(:all)
+  end
+
   test "synth configured with ENV" do
     Setting.stubs(:synth_api_key).returns(nil)
 
@@ -51,8 +62,8 @@ class Provider::RegistryTest < ActiveSupport::TestCase
       Setting.stubs(:openai_access_token).returns("sk-test-token")
       Setting.stubs(:openai_base_url).returns("https://api.deepseek.com/")
 
-      # Verify Provider::Openai is initialized correctly
-      Provider::Openai.expects(:new).with("sk-test-token", base_url: "https://api.deepseek.com/").returns(mock)
+      mock_provider = mock
+      Provider::Openai.expects(:new).with("sk-test-token", base_url: "https://api.deepseek.com/").returns(mock_provider)
 
       Provider::Registry.get_provider(:openai)
     end
@@ -63,8 +74,8 @@ class Provider::RegistryTest < ActiveSupport::TestCase
       Setting.stubs(:openai_access_token).returns("setting-token")
       Setting.stubs(:openai_base_url).returns("https://api.deepseek.com/")
 
-      # Environment variable should take precedence
-      Provider::Openai.expects(:new).with("env-token", base_url: "https://api.groq.com/openai").returns(mock)
+      mock_provider = mock
+      Provider::Openai.expects(:new).with("env-token", base_url: "https://api.groq.com/openai").returns(mock_provider)
 
       Provider::Registry.get_provider(:openai)
     end
