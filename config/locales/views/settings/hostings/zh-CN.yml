@@ -1,0 +1,41 @@
+---
+zh-CN:
+  settings:
+    hostings:
+      show:
+        general: 常规设置
+        invites: 邀请码
+        title: 自托管设置
+        danger_zone: 危险区域
+        ai: AI 设置
+      synth_settings:
+        title: Synth 设置
+        description: 输入 Synth 提供的 API 密钥
+        label: API 密钥
+        placeholder: 在此输入 API 密钥
+        api_calls_used: "%{used} / %{limit} API 调用已使用 (%{percentage})"
+        plan: "%{plan} 计划"
+      openai_settings:
+        title: OpenAI 配置
+        description: 配置 OpenAI 或兼容供应商的 API
+        configured_via_env: 已通过环境变量配置 OpenAI
+        access_token_label: API 密钥
+        access_token_placeholder: 输入你的 API 密钥
+        base_url_label: API 基础 URL
+        base_url_placeholder: https://api.openai.com/v1
+        model_id_label: 模型 ID
+        model_id_placeholder: gpt-4.1
+        supported_providers: 支持的供应商
+      invite_code_settings:
+        title: 需要邀请码注册
+        description: 每个新用户只能通过邀请码加入你的 Maybe 实例
+        email_confirmation_description: 启用后，用户更改邮箱时需要验证。
+        email_confirmation_title: 需要邮箱验证
+        generate_tokens: 生成新代码
+        generated_tokens: 已生成的代码
+      update:
+        success: 设置已更新
+        failure: 设置值无效
+      clear_cache:
+        cache_cleared: 数据缓存已清除，可能需要几分钟完成。
+      not_authorized: 你没有权限执行此操作
