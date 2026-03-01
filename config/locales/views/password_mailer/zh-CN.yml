@@ -1,0 +1,5 @@
+---
+zh-CN:
+  password_mailer:
+    password_reset:
+      subject: 重置你的 Maybe 密码

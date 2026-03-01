@@ -1,0 +1,13 @@
+---
+zh-CN:
+  transfer_matches:
+    new:
+      title: 匹配转账
+      outflow_transaction: 流出交易
+      inflow_transaction: 流入交易
+      matching_method: 匹配方式
+      matching_transaction: 匹配交易
+      target_account: 目标账户
+    matching_fields:
+      existing: 现有
+      create_new: 新建

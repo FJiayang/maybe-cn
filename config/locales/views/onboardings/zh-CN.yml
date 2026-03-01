@@ -12,11 +12,15 @@ zh-CN:
       submit: 完成
       subtitle: 让我们配置你的偏好设置。
       title: 配置偏好设置
+      color_theme: 颜色主题
     profile:
       country: 国家/地区
       first_name: 名字
+      first_name_placeholder: 名字
       household_name: 家庭名称
+      household_name_placeholder: 家庭名称
       last_name: 姓氏
+      last_name_placeholder: 姓氏
       profile_image: 头像
       submit: 继续
       subtitle: 让我们完善你的个人资料。
@@ -25,3 +29,14 @@ zh-CN:
       message: 很高兴你来到这里。接下来我们会问你几个问题来完成个人资料设置。
       setup: 设置账户
       title: 欢迎使用 Maybe
+    goals:
+      title: 你的财务目标
+      subtitle: 选择你最感兴趣的功能
+      unified_accounts: 在一个地方查看所有账户
+      cashflow: 了解现金流和支出
+      budgeting: 管理财务计划和预算
+      partner: 与伴侣共同管理财务
+      investments: 跟踪投资
+      ai_insights: 让 AI 帮助我了解财务状况
+      optimization: 分析和优化账户
+      reduce_stress: 减少财务压力或焦虑

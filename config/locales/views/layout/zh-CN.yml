@@ -1,6 +1,23 @@
 ---
 zh-CN:
   layouts:
+    application:
+      home: 首页
+      transactions: 交易
+      budgets: 预算
+      assistant: AI 助手
+      new_asset: 新建资产
+      new_debt: 新建负债
+      new_account: 新建账户
+      assets: 资产
+      debts: 负债
+      all: 全部
+      missing_historical_data: 缺少历史数据
+      missing_historical_data_desc: Maybe 使用 Synth API 获取历史汇率、证券价格等。此数据是计算准确历史账户余额所必需的。
+      add_synth_key: 在此处添加你的 Synth API 密钥
+      free_trial: 免费试用
+      days_remaining: "%{days} 天剩余"
+      upgrade: 升级
     auth:
       existing_account: 已有账户？
       no_account: 新用户？

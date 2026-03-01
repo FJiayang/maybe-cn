@@ -1,0 +1,8 @@
+---
+zh-CN:
+  plaid_items:
+    create:
+      success: 账户连接成功
+      error: 连接账户时出错
+    destroy:
+      success: 账户连接已移除

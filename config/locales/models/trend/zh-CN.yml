@@ -1,0 +1,9 @@
+---
+zh-CN:
+  activerecord:
+    attributes:
+      trend:
+        direction: 方向
+        value: 值
+    models:
+      trend: 趋势

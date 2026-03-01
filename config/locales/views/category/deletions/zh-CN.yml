@@ -1,0 +1,9 @@
+---
+zh-CN:
+  category:
+    deletions:
+      show:
+        title: 删除分类
+        subtitle: 删除此分类将取消关联所有相关交易
+        confirm: 我了解，删除此分类
+        cancel: 取消

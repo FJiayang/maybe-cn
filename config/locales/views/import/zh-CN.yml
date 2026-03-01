@@ -1,0 +1,46 @@
+---
+zh-CN:
+  import:
+    uploads:
+      show:
+        title: 导入你的数据
+        description: 在下方粘贴或上传你的 CSV 文件。请在开始前查看下方表格中的说明。
+        upload_csv: 上传 CSV
+        copy_paste: 复制粘贴
+        account_optional: 账户（可选）
+        multi_account_import: 多账户导入
+    cleans:
+      show:
+        title: 清理你的数据
+        description: 在下方表格中编辑你的数据。红色单元格为无效数据。
+        errors_notice: 你的数据中有错误。将鼠标悬停在错误上以查看详情。
+        errors_notice_mobile: 你的数据中有错误。点击错误提示以查看详情。
+    configurations:
+      show:
+        title: 配置你的导入
+        description: 选择对应每个 CSV 字段的列。
+      transaction_import:
+        date_format_label: 日期格式
+        date: 日期
+        amount: 金额
+      trade_import:
+        date_format_label: 日期格式
+      mint_import:
+        date_format_label: 日期格式
+    confirms:
+      show:
+        account_mapping_title: 分配你的账户
+        account_mapping_description: 将你导入文件中的所有账户分配给 Maybe 的现有账户。你也可以添加新账户或保持未分类。
+        account_type_mapping_title: 分配你的账户类型
+        account_type_mapping_description: 将你导入文件中的所有账户类型分配给 Maybe 的
+        category_mapping_title: 分配你的分类
+        category_mapping_description: 将你导入文件中的所有分类分配给 Maybe 的现有分类。你也可以添加新分类或保持未分类。
+        tag_mapping_title: 分配你的标签
+        tag_mapping_description: 将你导入文件中的所有标签分配给 Maybe 的现有标签。你也可以添加新标签或保持未分类。
+      mappings:
+        create_account: 创建账户
+        csv_mapping_label: "CSV 中的 %{mapping}"
+        maybe_mapping_label: "Maybe 中的 %{mapping}"
+        no_accounts: 你还没有任何账户。请创建一个账户，用于 CSV 中的（未分配）行，或返回清理步骤并提供一个我们可以使用的账户名称。
+        rows_label: 行
+        unassigned_account: 需要为未分配的行创建新账户？

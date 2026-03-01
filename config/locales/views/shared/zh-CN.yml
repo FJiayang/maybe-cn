@@ -1,0 +1,41 @@
+---
+zh-CN:
+  shared:
+    confirm_modal:
+      accept: 确认
+      body_html: "<p>你将无法撤销此决定</p>"
+      cancel: 取消
+      title: 你确定吗？
+    money_field:
+      label: 金额
+    syncing_notice:
+      syncing: 正在同步账户数据...
+    trend_change:
+      no_change: "无变化"
+    pagination:
+      previous: 上一页
+      next: 下一页
+      showing: 显示
+      of: 共
+      results: 条结果
+    transaction_tabs:
+      expense: 支出
+      income: 收入
+      transfer: 转账
+    empty_state:
+      title: 暂无数据
+      description: 开始添加一些数据以查看此处的内容
+    breadcrumb:
+      home: 首页
+      dashboard: 仪表板
+      transactions: 交易
+      accounts: 账户
+      settings: 设置
+      profile: 个人资料
+      preferences: 偏好设置
+      security: 安全
+      billing: 账单
+      categories: 分类
+      tags: 标签
+      merchants: 商家
+      imports: 导入

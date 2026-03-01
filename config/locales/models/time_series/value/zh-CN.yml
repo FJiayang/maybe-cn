@@ -1,0 +1,9 @@
+---
+zh-CN:
+  activerecord:
+    attributes:
+      time_series/value:
+        date: 日期
+        value: 值
+    models:
+      time_series/value: 时间序列值

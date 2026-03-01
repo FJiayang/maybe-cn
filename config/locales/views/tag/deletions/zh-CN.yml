@@ -1,0 +1,9 @@
+---
+zh-CN:
+  tag:
+    deletions:
+      show:
+        title: 删除标签
+        subtitle: 删除此标签将取消关联所有相关交易
+        confirm: 我了解，删除此标签
+        cancel: 取消

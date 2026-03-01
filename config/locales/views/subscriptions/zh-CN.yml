@@ -1,0 +1,7 @@
+---
+zh-CN:
+  subscriptions:
+    create:
+      success: 订阅创建成功
+    destroy:
+      success: 订阅已取消
