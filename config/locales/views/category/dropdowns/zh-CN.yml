@@ -1,0 +1,7 @@
+---
+zh-CN:
+  category:
+    dropdowns:
+      show:
+        bootstrap: 生成默认分类
+        empty: 未找到分类

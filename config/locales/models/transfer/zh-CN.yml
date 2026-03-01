@@ -1,0 +1,11 @@
+---
+zh-CN:
+  activerecord:
+    attributes:
+      transfer:
+        from_account: 转出账户
+        to_account: 转入账户
+        amount: 金额
+        date: 日期
+    models:
+      transfer: 转账

@@ -1,0 +1,21 @@
+---
+zh-CN:
+  settings:
+    api_keys:
+      show:
+        page_title: API 密钥
+      new:
+        title: 新建 API 密钥
+        name_label: API 密钥名称
+        name_placeholder: 输入密钥名称
+        create: 创建
+        cancel: 取消
+      index:
+        title: API 密钥
+        new_key: 新建密钥
+        no_keys: 暂无 API 密钥
+        created_at: 创建时间
+        last_used: 最后使用
+        actions: 操作
+        delete: 删除
+        confirm_delete: 你确定要删除此 API 密钥吗？

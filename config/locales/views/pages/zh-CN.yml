@@ -1,0 +1,24 @@
+---
+zh-CN:
+  pages:
+    changelog:
+      title: 更新日志
+    dashboard:
+      title: 仪表板
+      welcome_back: "欢迎回来，%{name}"
+      subtitle: 这是你的财务状况概览
+      new: 新建
+      net_worth_chart:
+        data_not_available: 所选期间无可用数据
+        title: 净资产
+      no_account_empty_state:
+        new_account: 新建账户
+        no_account_subtitle: 尚未添加账户，没有可显示的数据。添加你的第一个账户以开始查看仪表板数据。
+        no_account_title: 暂无账户
+        add_account: 添加账户
+      cashflow_sankey:
+        title: 现金流
+      balance_sheet:
+        assets: 资产
+        liabilities: 负债
+        net_worth: 净资产

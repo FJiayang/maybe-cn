@@ -1,0 +1,7 @@
+---
+zh-CN:
+  invite_codes:
+    create:
+      success: 邀请码创建成功
+    destroy:
+      success: 邀请码已删除

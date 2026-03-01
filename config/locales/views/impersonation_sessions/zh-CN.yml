@@ -1,0 +1,7 @@
+---
+zh-CN:
+  impersonation_sessions:
+    create:
+      success: 模拟会话已启动
+    destroy:
+      success: 模拟会话已结束

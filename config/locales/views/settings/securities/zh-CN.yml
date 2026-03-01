@@ -1,0 +1,15 @@
+---
+zh-CN:
+  settings:
+    securities:
+      show:
+        page_title: 安全
+        mfa_title: 双因素认证
+        mfa_description: 通过启用双因素认证增强账户安全性
+        enable_mfa: 启用 2FA
+        disable_mfa: 禁用 2FA
+        disable_mfa_confirm: 你确定要禁用双因素认证吗？
+        change_password: 更改密码
+        current_password: 当前密码
+        new_password: 新密码
+        confirm_password: 确认密码

@@ -1,0 +1,12 @@
+---
+zh-CN:
+  activerecord:
+    attributes:
+      address:
+        line1: 街道地址
+        locality: 城市
+        region: 州/省
+        postal_code: 邮编
+        country: 国家
+    models:
+      address: 地址

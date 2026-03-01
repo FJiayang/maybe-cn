@@ -1,0 +1,14 @@
+---
+zh-CN:
+  activerecord:
+    attributes:
+      import:
+        created_at: 创建时间
+        updated_at: 更新时间
+        status: 状态
+        type: 类型
+    models:
+      import: 导入
+      imports/transaction_import: 交易导入
+      imports/trade_import: 交易导入
+      imports/mint_import: Mint 导入

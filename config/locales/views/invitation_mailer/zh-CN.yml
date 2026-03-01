@@ -1,0 +1,5 @@
+---
+zh-CN:
+  invitation_mailer:
+    invite:
+      subject: 你被邀请加入 Maybe
