@@ -1,8 +1,28 @@
 ---
 zh-CN:
   onboardings:
-    header:
-      sign_out: 退出登录
+    goals:
+      title: 你为什么使用 Maybe？
+      subtitle: 选择一个或多个目标，作为你的个人理财工具。
+      goal_unified_accounts: 在一个地方查看所有账户
+      goal_cashflow: 了解现金流和支出
+      goal_budgeting: 管理财务计划和预算
+      goal_partner: 与伴侣共同管理财务
+      goal_investments: 跟踪投资
+      goal_ai_insights: 让 AI 帮助我了解财务状况
+      goal_optimization: 分析和优化账户
+      goal_reduce_stress: 减少财务压力或焦虑
+    show:
+      title: 让我们设置你的账户
+      subtitle: 首先，让我们完善你的个人资料。
+      first_name: 名字
+      first_name_placeholder: 名字
+      last_name: 姓氏
+      last_name_placeholder: 姓氏
+      household_name: 家庭名称
+      household_name_placeholder: 家庭名称
+      country: 国家/地区
+      submit: 继续
     preferences:
       currency: 货币
       date_format: 日期格式
@@ -10,33 +30,34 @@ zh-CN:
       locale: 语言
       preview: 根据偏好设置预览数据显示方式。
       submit: 完成
-      subtitle: 让我们配置你的偏好设置。
       title: 配置偏好设置
       color_theme: 颜色主题
-    profile:
-      country: 国家/地区
-      first_name: 名字
-      first_name_placeholder: 名字
-      household_name: 家庭名称
-      household_name_placeholder: 家庭名称
-      last_name: 姓氏
-      last_name_placeholder: 姓氏
-      profile_image: 头像
-      submit: 继续
-      subtitle: 让我们完善你的个人资料。
-      title: 基础设置
-    show:
-      message: 很高兴你来到这里。接下来我们会问你几个问题来完成个人资料设置。
-      setup: 设置账户
-      title: 欢迎使用 Maybe
-    goals:
-      title: 你的财务目标
-      subtitle: 选择你最感兴趣的功能
-      unified_accounts: 在一个地方查看所有账户
-      cashflow: 了解现金流和支出
-      budgeting: 管理财务计划和预算
-      partner: 与伴侣共同管理财务
-      investments: 跟踪投资
-      ai_insights: 让 AI 帮助我了解财务状况
-      optimization: 分析和优化账户
-      reduce_stress: 减少财务压力或焦虑
+      theme_system: 跟随系统
+      theme_light: 浅色
+      theme_dark: 深色
+      translation_notice: 请注意，我们仍在努力完善各种语言的翻译。
+    trial:
+      try_for_14_days: 免费试用 Maybe 14 天
+      continue_trial: 继续试用
+      upgrade: 升级
+      how_trial_works: 试用期如何工作
+      today: 今天
+      today_description: 你将获得 Maybe 14 天免费试用
+      in_13_days: "13 天后（%{date}）"
+      in_13_days_description: 我们会提醒你试用期即将结束。
+      in_14_days: "14 天后（%{date}）"
+      in_14_days_description: 试用期结束 — 订阅以继续使用 Maybe
+      whats_included: 包含内容
+      institutions: 支持 10,000+ 金融机构连接
+      unlimited_accounts: 连接无限账户和账户类型
+      performance: 投资组合表现和投资回报
+      transactions: 全面的交易跟踪体验
+      ai_access: 无限访问 Maybe AI 对话
+      manual_tracking: 手动账户跟踪
+      multi_currency: 多货币和全球覆盖
+      early_access: 新功能抢先体验
+      priority_support: 优先人工支持
+    logout:
+      sign_out: 退出登录
+    onboarding_nav:
+      step: "步骤 %{current} / %{total}"

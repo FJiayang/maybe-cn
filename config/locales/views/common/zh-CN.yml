@@ -1,7 +1,6 @@
 ---
 zh-CN:
   common:
-    # 通用按钮和操作
     actions:
       new: 新建
       edit: 编辑
@@ -58,8 +57,9 @@ zh-CN:
       none: 无
       optional: 可选
       required: 必填
+      coming_soon: 即将推出
+      learn_more: 了解更多
 
-    # 通用标签
     labels:
       name: 名称
       description: 描述
@@ -101,8 +101,13 @@ zh-CN:
       no: 否
       true: 是
       false: 否
+      income: 收入
+      expense: 支出
+      transfer: 转账
+      weight: 权重
+      count: 数量
+      item: 项目
 
-    # 通用消息
     messages:
       empty_state: 暂无数据
       loading: 正在加载...
@@ -119,8 +124,17 @@ zh-CN:
       select_option: 请选择
       search_placeholder: 搜索...
       filter_placeholder: 筛选...
+      uncategorized: 未分类
+      default: 默认
+      leave_empty: 留空
+      select_column: 选择列
+      select_format: 选择格式
+      select_strategy: 选择策略
+      select_convention: 选择约定
+      select_type: 选择类型
+      multi_account_import: 多账户导入
+      unassigned: 未分配
 
-    # 表单相关
     form:
       placeholder:
         name: 输入名称
@@ -130,11 +144,16 @@ zh-CN:
         search: 搜索...
         select: 请选择...
         optional: （可选）
-      help_text:
-        optional: 此字段为可选
-        required: 此字段为必填
+        enter_value: 输入值
+        enter_name: 输入名称
+        enter_email: 输入邮箱地址
+        enter_password: 输入密码
+        paste_csv: 在此粘贴 CSV 文件内容
+        search_entries: 搜索条目...
+        search_transactions: 搜索交易...
+        start_date: 开始日期
+        end_date: 结束日期
 
-    # 导航
     nav:
       home: 首页
       dashboard: 仪表板
