@@ -17,6 +17,19 @@ class Settings::HostingsControllerTest < ActionDispatch::IntegrationTest
         plan: "free",
       )
     )
+
+    @original_settings = {
+      synth_api_key: Setting.synth_api_key,
+      openai_access_token: Setting.openai_access_token,
+      openai_base_url: Setting.openai_base_url,
+      openai_model_id: Setting.openai_model_id
+    }
+  end
+
+  teardown do
+    @original_settings.each do |key, value|
+      Setting.send("#{key}=", value)
+    end
   end
 
   test "cannot edit when self hosting is disabled" do

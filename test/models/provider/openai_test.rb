@@ -6,6 +6,11 @@ class Provider::OpenaiTest < ActiveSupport::TestCase
   setup do
     @subject = @openai = Provider::Openai.new(ENV.fetch("OPENAI_ACCESS_TOKEN", "test-openai-token"))
     @subject_model = "gpt-4.1"
+    @original_openai_model_id = Setting.openai_model_id
+  end
+
+  teardown do
+    Setting.openai_model_id = @original_openai_model_id
   end
 
   test "openai errors are automatically raised" do
