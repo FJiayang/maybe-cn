@@ -4,14 +4,21 @@ class Provider::Openai < Provider
   # Subclass so errors caught in this provider are raised as Provider::Openai::Error
   Error = Class.new(Provider::Error)
 
-  MODELS = %w[gpt-4.1]
-
-  def initialize(access_token)
-    @client = ::OpenAI::Client.new(access_token: access_token)
+  def initialize(access_token, base_url: nil)
+    client_options = { access_token: access_token }
+    client_options[:uri_base] = base_url if base_url.present?
+    @client = ::OpenAI::Client.new(**client_options)
   end
 
   def supports_model?(model)
-    MODELS.include?(model)
+    available_models.include?(model)
+  end
+
+  # Class method to get configured available models list
+  def self.available_models
+    models_string = Setting.openai_model_id
+    return ["gpt-4.1"] if models_string.blank?
+    models_string.split(",").map(&:strip).reject(&:blank?)
   end
 
   def auto_categorize(transactions: [], user_categories: [])
@@ -83,4 +90,8 @@ class Provider::Openai < Provider
 
   private
     attr_reader :client
+
+    def available_models
+      self.class.available_models
+    end
 end
