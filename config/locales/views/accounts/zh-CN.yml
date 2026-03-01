@@ -1,0 +1,20 @@
+---
+zh-CN:
+  accounts:
+    index:
+      title: 账户
+      add_account: 添加账户
+      account_types: 账户类型
+    show:
+      title: 账户详情
+      edit: 编辑
+      delete: 删除
+    new:
+      title: 新建账户
+    edit:
+      title: 编辑账户
+    form:
+      name: 账户名称
+      balance: 余额
+      currency: 货币
+      type: 账户类型
