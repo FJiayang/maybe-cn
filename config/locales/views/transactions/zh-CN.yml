@@ -65,6 +65,8 @@ zh-CN:
       edit_tags: 编辑标签
       import: 导入
     searches:
+      form:
+        search_placeholder: 搜索交易...
       filters:
         amount_filter:
           equal_to: 等于

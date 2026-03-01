@@ -1,24 +1,29 @@
 ---
 zh-CN:
   pages:
-    changelog:
-      title: 更新日志
     dashboard:
-      title: 仪表板
       welcome_back: "欢迎回来，%{name}"
       subtitle: 这是你的财务状况概览
       new: 新建
-      net_worth_chart:
-        data_not_available: 所选期间无可用数据
-        title: 净资产
-      no_account_empty_state:
-        new_account: 新建账户
-        no_account_subtitle: 尚未添加账户，没有可显示的数据。添加你的第一个账户以开始查看仪表板数据。
-        no_account_title: 暂无账户
-        add_account: 添加账户
-      cashflow_sankey:
-        title: 现金流
-      balance_sheet:
-        assets: 资产
-        liabilities: 负债
-        net_worth: 净资产
+      shutdown_notice_title: Maybe 将于 2025 年 8 月 31 日关闭
+      shutdown_notice_read_more: 阅读公告了解更多详情
+      shutdown_notice_refund: 所有订阅者将获得按比例退款
+      shutdown_notice_export_html: "请尽快%{link}你的数据"
+      shutdown_notice_export_link: 导出
+    cashflow_sankey:
+      cashflow: 现金流
+      no_cashflow_title: 暂无现金流数据
+      no_cashflow_subtitle: 添加交易以查看你的现金流分析
+      add_transaction: 添加交易
+    balance_sheet:
+      name: 名称
+      weight: 权重
+      value: 价值
+      no_classification_yet: "暂无 %{classification}"
+      add_classification_accounts: "添加 %{classification} 账户以查看你的财务状况"
+    no_accounts_graph_placeholder:
+      no_account_title: 暂无账户
+      no_account_subtitle: 尚未添加账户，没有可显示的数据。添加你的第一个账户以开始查看仪表板数据。
+      add_account: 添加账户
+    changelog:
+      title: 更新日志
