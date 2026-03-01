@@ -17,7 +17,7 @@ class Provider::Openai < Provider
   # Class method to get configured available models list
   def self.available_models
     models_string = Setting.openai_model_id
-    return ["gpt-4.1"] if models_string.blank?
+    return [ "gpt-4.1" ] if models_string.blank?
     models_string.split(",").map(&:strip).reject(&:blank?)
   end
 

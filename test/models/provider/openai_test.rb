@@ -267,17 +267,17 @@ class Provider::OpenaiTest < ActiveSupport::TestCase
   # 新增测试：available_models 类方法
   test "available_models returns default model when setting is blank" do
     Setting.openai_model_id = ""
-    assert_equal ["gpt-4.1"], Provider::Openai.available_models
+    assert_equal [ "gpt-4.1" ], Provider::Openai.available_models
   end
 
   test "available_models returns single model from setting" do
     Setting.openai_model_id = "deepseek-chat"
-    assert_equal ["deepseek-chat"], Provider::Openai.available_models
+    assert_equal [ "deepseek-chat" ], Provider::Openai.available_models
   end
 
   test "available_models returns multiple models from comma-separated setting" do
     Setting.openai_model_id = "gpt-4.1, deepseek-chat, gpt-3.5-turbo"
-    assert_equal ["gpt-4.1", "deepseek-chat", "gpt-3.5-turbo"], Provider::Openai.available_models
+    assert_equal [ "gpt-4.1", "deepseek-chat", "gpt-3.5-turbo" ], Provider::Openai.available_models
   end
 
   # 新增测试：supports_model? 使用动态模型列表
