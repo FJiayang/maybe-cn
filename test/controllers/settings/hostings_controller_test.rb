@@ -80,4 +80,45 @@ class Settings::HostingsControllerTest < ActionDispatch::IntegrationTest
       assert_equal I18n.t("settings.hostings.not_authorized"), flash[:alert]
     end
   end
+
+  # OpenAI configuration tests
+  test "can update openai_access_token when self hosting is enabled" do
+    with_self_hosting do
+      patch settings_hosting_url, params: { setting: { openai_access_token: "sk-test-token" } }
+
+      assert_equal "sk-test-token", Setting.openai_access_token
+    end
+  end
+
+  test "can update openai_base_url when self hosting is enabled" do
+    with_self_hosting do
+      patch settings_hosting_url, params: { setting: { openai_base_url: "https://api.deepseek.com/" } }
+
+      assert_equal "https://api.deepseek.com/", Setting.openai_base_url
+    end
+  end
+
+  test "can update openai_model_id when self hosting is enabled" do
+    with_self_hosting do
+      patch settings_hosting_url, params: { setting: { openai_model_id: "deepseek-chat" } }
+
+      assert_equal "deepseek-chat", Setting.openai_model_id
+    end
+  end
+
+  test "can update all openai settings at once" do
+    with_self_hosting do
+      patch settings_hosting_url, params: {
+        setting: {
+          openai_access_token: "sk-new-token",
+          openai_base_url: "https://api.groq.com/openai",
+          openai_model_id: "llama3-8b-8192"
+        }
+      }
+
+      assert_equal "sk-new-token", Setting.openai_access_token
+      assert_equal "https://api.groq.com/openai", Setting.openai_base_url
+      assert_equal "llama3-8b-8192", Setting.openai_model_id
+    end
+  end
 end
