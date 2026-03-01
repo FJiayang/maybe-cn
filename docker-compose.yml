@@ -46,7 +46,7 @@ x-rails-env: &rails_env
 
 services:
   web:
-    image: registry.cn-guangzhou.aliyuncs.com/fjy8018_proxy/maybe:latest
+    image: ghcr.io/fjiayang/maybe-cn:latest
     volumes:
       - app-storage:/rails/storage
     ports:
@@ -63,7 +63,7 @@ services:
       - maybe_net
 
   worker:
-    image: registry.cn-guangzhou.aliyuncs.com/fjy8018_proxy/maybe:latest
+    image: ghcr.io/fjiayang/maybe-cn:latest
     command: bundle exec sidekiq
     restart: unless-stopped
     depends_on:
