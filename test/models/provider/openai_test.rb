@@ -257,4 +257,37 @@ class Provider::OpenaiTest < ActiveSupport::TestCase
       assert_includes response_chunks.first.data.messages.first.output_text, "$10,000"
     end
   end
+
+  # 新增测试：支持自定义 base_url
+  test "initializes with custom base_url" do
+    provider = Provider::Openai.new("test-token", base_url: "https://api.deepseek.com/")
+    assert_instance_of Provider::Openai, provider
+  end
+
+  # 新增测试：available_models 类方法
+  test "available_models returns default model when setting is blank" do
+    Setting.openai_model_id = ""
+    assert_equal ["gpt-4.1"], Provider::Openai.available_models
+  end
+
+  test "available_models returns single model from setting" do
+    Setting.openai_model_id = "deepseek-chat"
+    assert_equal ["deepseek-chat"], Provider::Openai.available_models
+  end
+
+  test "available_models returns multiple models from comma-separated setting" do
+    Setting.openai_model_id = "gpt-4.1, deepseek-chat, gpt-3.5-turbo"
+    assert_equal ["gpt-4.1", "deepseek-chat", "gpt-3.5-turbo"], Provider::Openai.available_models
+  end
+
+  # 新增测试：supports_model? 使用动态模型列表
+  test "supports_model? returns true for configured model" do
+    Setting.openai_model_id = "custom-model"
+    assert @subject.supports_model?("custom-model")
+  end
+
+  test "supports_model? returns false for unconfigured model" do
+    Setting.openai_model_id = "custom-model"
+    assert_not @subject.supports_model?("unsupported-model")
+  end
 end
