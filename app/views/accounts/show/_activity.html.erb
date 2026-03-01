@@ -6,7 +6,7 @@
       <%= tag.h2 t(".title"), class: "font-medium text-lg" %>
       <% unless @account.plaid_account_id.present? %>
         <%= render DS::Menu.new(variant: "button") do |menu| %>
-          <% menu.with_button(text: "New", variant: "secondary", icon: "plus") %>
+          <% menu.with_button(text: t("common.actions.new"), variant: "secondary", icon: "plus") %>
 
           <% menu.with_item(
               variant: "link",

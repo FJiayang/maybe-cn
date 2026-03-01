@@ -15,7 +15,7 @@
   <div class="flex items-center gap-4">
     <%= form.select :date_col_label,
                     import.csv_headers,
-                    { label: "Date", prompt: "Select column" },
+                    { label: t("common.labels.date"), prompt: "Select column" },
                     required: true %>
     <%= form.select :date_format,
                     Family::DATE_FORMATS,
@@ -27,11 +27,11 @@
   <div class="flex items-center gap-4">
     <%= form.select :amount_col_label,
                     import.csv_headers,
-                    { label: "Amount", container_class: "w-2/5", prompt: "Select column" },
+                    { label: t("common.labels.amount"), container_class: "w-2/5", prompt: "Select column" },
                     required: true %>
     <%= form.select :currency_col_label,
                     import.csv_headers,
-                    { include_blank: "Default", label: "Currency", container_class: "w-1/5" } %>
+                    { include_blank: "Default", label: t("common.labels.currency"), container_class: "w-1/5" } %>
     <%= form.select :number_format,
                     Import::NUMBER_FORMATS.keys,
                     { label: "Format", prompt: "Select format", container_class: "w-2/5" },
@@ -91,21 +91,21 @@
   <% unless import.account.present? %>
     <%= form.select :account_col_label,
                     import.csv_headers,
-                    { include_blank: "Leave empty", label: "Account" } %>
+                    { include_blank: "Leave empty", label: t("common.labels.account") } %>
   <% end %>
 
   <%= form.select :name_col_label,
                   import.csv_headers,
-                  { include_blank: "Leave empty", label: "Name" } %>
+                  { include_blank: "Leave empty", label: t("common.labels.name") } %>
   <%= form.select :category_col_label,
                   import.csv_headers,
-                  { include_blank: "Leave empty", label: "Category" } %>
+                  { include_blank: "Leave empty", label: t("common.labels.category") } %>
   <%= form.select :tags_col_label,
                   import.csv_headers,
-                  { include_blank: "Leave empty", label: "Tags" } %>
+                  { include_blank: "Leave empty", label: t("common.labels.tags") } %>
   <%= form.select :notes_col_label,
                   import.csv_headers,
-                  { include_blank: "Leave empty", label: "Notes" } %>
+                  { include_blank: "Leave empty", label: t("common.labels.notes") } %>
 
   <%= form.submit "Apply configuration", disabled: import.complete? %>
 <% end %>

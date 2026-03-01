@@ -12,7 +12,7 @@
     </div>
 
     <div class="space-y-2 flex flex-col">
-      <%= render DS::Link.new(text: "Check status", href: import_path(import), variant: "primary", full_width: true) %>
+      <%= render DS::Link.new(text: t("common.actions.check_status"), href: import_path(import), variant: "primary", full_width: true) %>
       <%= render DS::Link.new(text: "Back to dashboard", href: root_path, variant: "secondary", full_width: true) %>
     </div>
   </div>

@@ -1,0 +1,156 @@
+---
+zh-CN:
+  common:
+    # 通用按钮和操作
+    actions:
+      new: 新建
+      edit: 编辑
+      delete: 删除
+      save: 保存
+      cancel: 取消
+      confirm: 确认
+      back: 返回
+      next: 下一步
+      import: 导入
+      export: 导出
+      search: 搜索
+      filter: 筛选
+      submit: 提交
+      create: 创建
+      update: 更新
+      remove: 移除
+      dismiss: 关闭
+      retry: 重试
+      copy: 复制
+      manage: 管理
+      upgrade: 升级
+      subscribe: 订阅
+      sign_out: 退出登录
+      sign_in: 登录
+      sign_up: 注册
+      try_again: 重试
+      complete_setup: 完成设置
+      publish: 发布
+      check_status: 检查状态
+      continue: 继续
+      apply: 应用
+      add: 添加
+      view: 查看
+      start: 开始
+      stop: 停止
+      enable: 启用
+      disable: 禁用
+      refresh: 刷新
+      close: 关闭
+      open: 打开
+      select: 选择
+      upload: 上传
+      download: 下载
+      generate: 生成
+      use_defaults: 使用默认值
+      reapply: 重新应用
+      reassign: 重新分配
+      revert: 恢复
+      revoke: 撤销
+      fix: 修复
+      today: 今天
+      all: 全部
+      none: 无
+      optional: 可选
+      required: 必填
+
+    # 通用标签
+    labels:
+      name: 名称
+      description: 描述
+      amount: 金额
+      date: 日期
+      category: 分类
+      account: 账户
+      type: 类型
+      status: 状态
+      notes: 备注
+      tags: 标签
+      merchant: 商家
+      currency: 货币
+      balance: 余额
+      value: 价值
+      quantity: 数量
+      price: 价格
+      total: 总计
+      percentage: 百分比
+      period: 周期
+      start_date: 开始日期
+      end_date: 结束日期
+      created_at: 创建时间
+      updated_at: 更新时间
+      actions: 操作
+      details: 详情
+      overview: 概览
+      settings: 设置
+      history: 历史
+      empty: 空
+      loading: 加载中
+      processing: 处理中
+      completed: 已完成
+      pending: 待处理
+      failed: 失败
+      active: 活跃
+      inactive: 非活跃
+      yes: 是
+      no: 否
+      true: 是
+      false: 否
+
+    # 通用消息
+    messages:
+      empty_state: 暂无数据
+      loading: 正在加载...
+      error: 发生错误
+      success: 操作成功
+      confirm_delete: 确定要删除吗？
+      confirm_action: 确定要执行此操作吗？
+      no_results: 未找到结果
+      try_again: 请重试
+      coming_soon: 即将推出
+      not_available: 不可用
+      required_field: 此字段为必填项
+      invalid_format: 格式无效
+      select_option: 请选择
+      search_placeholder: 搜索...
+      filter_placeholder: 筛选...
+
+    # 表单相关
+    form:
+      placeholder:
+        name: 输入名称
+        description: 输入描述
+        amount: 输入金额
+        date: 选择日期
+        search: 搜索...
+        select: 请选择...
+        optional: （可选）
+      help_text:
+        optional: 此字段为可选
+        required: 此字段为必填
+
+    # 导航
+    nav:
+      home: 首页
+      dashboard: 仪表板
+      accounts: 账户
+      transactions: 交易
+      budgets: 预算
+      settings: 设置
+      profile: 个人资料
+      preferences: 偏好设置
+      security: 安全
+      billing: 账单
+      categories: 分类
+      tags: 标签
+      merchants: 商家
+      imports: 导入
+      rules: 规则
+      assistant: AI 助手
+      back_to_dashboard: 返回仪表板
+      back_to_settings: 返回设置
