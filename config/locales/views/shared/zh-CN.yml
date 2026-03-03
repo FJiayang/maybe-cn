@@ -1,6 +1,8 @@
 ---
 zh-CN:
   shared:
+    app_version:
+      version: "版本："
     confirm_modal:
       accept: 确认
       body_html: "<p>你将无法撤销此决定</p>"

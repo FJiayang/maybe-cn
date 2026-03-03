@@ -1,19 +1,19 @@
 module SettingsHelper
   SETTINGS_ORDER = [
-    { name: "Account", path: :settings_profile_path },
-    { name: "Preferences", path: :settings_preferences_path },
-    { name: "Security", path: :settings_security_path },
-    { name: "Self hosting", path: :settings_hosting_path, condition: :self_hosted? },
-    { name: "API Key", path: :settings_api_key_path },
-    { name: "Billing", path: :settings_billing_path, condition: :not_self_hosted? },
-    { name: "Accounts", path: :accounts_path },
-    { name: "Imports", path: :imports_path },
-    { name: "Tags", path: :tags_path },
-    { name: "Categories", path: :categories_path },
-    { name: "Rules", path: :rules_path },
-    { name: "Merchants", path: :family_merchants_path },
-    { name: "What's new", path: :changelog_path },
-    { name: "Feedback", path: :feedback_path }
+    { name_key: "helpers.settings.menu.account", path: :settings_profile_path },
+    { name_key: "helpers.settings.menu.preferences", path: :settings_preferences_path },
+    { name_key: "helpers.settings.menu.security", path: :settings_security_path },
+    { name_key: "helpers.settings.menu.self_hosting", path: :settings_hosting_path, condition: :self_hosted? },
+    { name_key: "helpers.settings.menu.api_key", path: :settings_api_key_path },
+    { name_key: "helpers.settings.menu.billing", path: :settings_billing_path, condition: :not_self_hosted? },
+    { name_key: "helpers.settings.menu.accounts", path: :accounts_path },
+    { name_key: "helpers.settings.menu.imports", path: :imports_path },
+    { name_key: "helpers.settings.menu.tags", path: :tags_path },
+    { name_key: "helpers.settings.menu.categories", path: :categories_path },
+    { name_key: "helpers.settings.menu.rules", path: :rules_path },
+    { name_key: "helpers.settings.menu.merchants", path: :family_merchants_path },
+    { name_key: "helpers.settings.menu.whats_new", path: :changelog_path },
+    { name_key: "helpers.settings.menu.feedback", path: :feedback_path }
   ]
 
   def adjacent_setting(current_path, offset)
@@ -29,7 +29,7 @@ module SettingsHelper
     render partial: "settings/settings_nav_link_large", locals: {
       path: send(adjacent[:path]),
       direction: offset > 0 ? "next" : "previous",
-      title: adjacent[:name]
+      title: I18n.t(adjacent[:name_key])
     }
   end
 

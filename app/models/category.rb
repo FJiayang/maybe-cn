@@ -113,13 +113,13 @@ class Category < ApplicationRecord
   private
     def category_level_limit
       if (subcategory? && parent.subcategory?) || (parent? && subcategory?)
-        errors.add(:parent, "can't have more than 2 levels of subcategories")
+        errors.add(:parent, :cant_have_more_than_2_levels)
       end
     end
 
     def nested_category_matches_parent_classification
       if subcategory? && parent.classification != classification
-        errors.add(:parent, "must have the same classification as its parent")
+        errors.add(:parent, :must_have_same_classification_as_parent)
       end
     end
 

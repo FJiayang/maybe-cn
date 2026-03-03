@@ -1,0 +1,51 @@
+---
+zh-CN:
+  budgets:
+    show:
+      budgeted: 已预算
+      actual: 实际
+      categories: 分类
+      edit: 编辑
+    budget_nav:
+      setup: 设置
+      categories: 分类
+    budget_header:
+      today: 今天
+    budget_donut:
+      spent: 已支出
+      remaining: 剩余
+      available: 可用
+      of_budgeted: "共 %{amount}"
+      new_budget: 新建预算
+      unused: 未使用
+    budgeted_summary:
+      title: 已预算
+      total: 总计
+      expected_income: 预期收入
+      earned: "%{amount} 已赚取"
+      over: "%{amount} 超出"
+      left: "%{amount} 剩余"
+      budgeted: 已预算
+      spent: "%{amount} 已支出"
+    actuals_summary:
+      title: 实际支出
+      total: 总计
+      income: 收入
+      expenses: 支出
+      spent: 支出
+    over_allocation_warning:
+      title: 超出分配
+      message: 你的预算分配超过了你的收入。
+    picker:
+      select_month: 选择月份
+    edit:
+      title: 设置预算
+      description: 在下方输入您的月收入和计划支出以设置预算。
+      budgeted_spending: 预算支出
+      expected_income: 预期收入
+      autosuggest_title: 自动建议收入和支出预算
+      autosuggest_description: 这将基于交易历史。AI可能会出错，请验证后再继续。
+      continue: 继续
+    budget_categories:
+      categories: 分类
+      amount: 金额

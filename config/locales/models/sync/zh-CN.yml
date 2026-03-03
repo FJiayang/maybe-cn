@@ -1,0 +1,17 @@
+---
+zh-CN:
+  activerecord:
+    attributes:
+      sync:
+        status: 状态
+        error: 错误
+        window_start_date: 窗口开始日期
+        window_end_date: 窗口结束日期
+    models:
+      sync: 同步
+    errors:
+      models:
+        sync:
+          attributes:
+            window_end_date:
+              must_be_greater_than_start_date: 必须大于窗口开始日期

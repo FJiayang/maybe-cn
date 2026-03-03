@@ -1,0 +1,15 @@
+---
+en:
+  rules:
+    index:
+      rules: Rules
+      delete_all_rules: Delete all rules
+      all_rules: all rules
+      new_rule: New rule
+      ai_cost_warning: AI-enabled rule actions will cost money.  Be sure to filter as narrowly as possible to avoid unnecessary costs.
+      sort_by: "Sort by:"
+      name: Name
+      updated_at: Updated At
+      toggle_sort: Toggle sort direction
+      no_rules: No rules yet
+      no_rules_description: Set up rules to perform actions to your transactions and other data on every account sync.

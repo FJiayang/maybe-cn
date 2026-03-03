@@ -6,6 +6,15 @@ en:
         page_title: Billing
         subscription_subtitle: Update your subscription and billing details
         subscription_title: Manage subscription
+        subscribed_to: You are currently subscribed to the <span class="font-medium">%{plan}</span>.
+        renews_on: Your plan renews on <span class="font-medium">%{date}</span>.
+        trialing: You are currently trialing Maybe
+        trial_days_remaining: "%{days} days remaining"
+        not_subscribed: You are currently <span class="font-medium">not subscribed</span>
+        not_subscribed_hint: Once you subscribe to Maybe+, you'll see your billing settings here.
+        manage: Manage
+        choose_plan: Choose plan
+        billing_via_stripe: Billing via Stripe
     preferences:
       show:
         country: Country
@@ -22,6 +31,8 @@ en:
         theme_system: System
         theme_title: Theme
         timezone: Timezone
+        i18n_note_html: Please note, we are still working on translations for various languages. Please see the %{link} for more information.
+        i18n_issue_link: I18n issue
     profiles:
       destroy:
         cannot_remove_self: You cannot remove yourself from the account.
@@ -68,6 +79,18 @@ en:
     securities:
       show:
         page_title: Security
+        mfa_title: Two-Factor Authentication
+        mfa_description: Add an extra layer of security to your account by requiring
+          a code from your authenticator app when signing in
+        mfa_enabled_status_html: Two-factor authentication is <span class="font-medium text-green-600">enabled</span>
+        mfa_enabled_hint: Your account is protected with an additional layer of security.
+        mfa_disabled_status_html: Two-factor authentication is <span class="font-medium text-red-600">disabled</span>
+        mfa_disabled_hint: Enable 2FA to add an extra layer of security to your account.
+        enable_mfa: Enable 2FA
+        disable_mfa: Disable 2FA
+        disable_mfa_confirm_title: Disable Two-Factor Authentication
+        disable_mfa_confirm_body: Are you sure you want to disable two-factor authentication?
+          This will make your account less secure.
     settings_nav:
       accounts_label: Accounts
       api_key_label: API Key

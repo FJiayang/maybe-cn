@@ -4,9 +4,9 @@ class ImportsController < ApplicationController
   def publish
     @import.publish_later
 
-    redirect_to import_path(@import), notice: "Your import has started in the background."
+    redirect_to import_path(@import), notice: t(".notice")
   rescue Import::MaxRowCountExceededError
-    redirect_back_or_to import_path(@import), alert: "Your import exceeds the maximum row count of #{@import.max_row_count}."
+    redirect_back_or_to import_path(@import), alert: t(".alert", max_rows: @import.max_row_count)
   end
 
   def index
@@ -32,30 +32,30 @@ class ImportsController < ApplicationController
 
   def show
     if !@import.uploaded?
-      redirect_to import_upload_path(@import), alert: "Please finalize your file upload."
+      redirect_to import_upload_path(@import), alert: t(".alert_upload")
     elsif !@import.publishable?
-      redirect_to import_confirm_path(@import), alert: "Please finalize your mappings before proceeding."
+      redirect_to import_confirm_path(@import), alert: t(".alert_mappings")
     end
   end
 
   def revert
     @import.revert_later
-    redirect_to imports_path, notice: "Import is reverting in the background."
+    redirect_to imports_path, notice: t(".notice")
   end
 
   def apply_template
     if @import.suggested_template
       @import.apply_template!(@import.suggested_template)
-      redirect_to import_configuration_path(@import), notice: "Template applied."
+      redirect_to import_configuration_path(@import), notice: t(".notice")
     else
-      redirect_to import_configuration_path(@import), alert: "No template found, please manually configure your import."
+      redirect_to import_configuration_path(@import), alert: t(".alert")
     end
   end
 
   def destroy
     @import.destroy
 
-    redirect_to imports_path, notice: "Your import has been deleted."
+    redirect_to imports_path, notice: t(".notice")
   end
 
   private

@@ -10,5 +10,7 @@ en:
       title: No entries found
     loading:
       loading: Loading entries...
+    selection_bar:
+      delete: Delete
     update:
       success: Entry updated

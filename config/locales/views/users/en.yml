@@ -11,3 +11,10 @@ en:
     reset:
       success: Your account has been reset. Data will be deleted in the background in some time.
       unauthorized: You are not authorized to perform this action
+    user_menu:
+      version: "Version:"
+      settings: Settings
+      changelog: Changelog
+      feedback: Feedback
+      contact: Contact
+      log_out: Log out

@@ -26,14 +26,14 @@ class ImpersonationSession < ApplicationRecord
 
   private
     def impersonator_is_super_admin
-      errors.add(:impersonator, "must be a super admin to impersonate") unless impersonator.super_admin?
+      errors.add(:impersonator, :must_be_super_admin) unless impersonator.super_admin?
     end
 
     def impersonated_is_not_super_admin
-      errors.add(:impersonated, "cannot be a super admin") if impersonated.super_admin?
+      errors.add(:impersonated, :cannot_be_super_admin) if impersonated.super_admin?
     end
 
     def impersonator_different_from_impersonated
-      errors.add(:impersonator, "cannot be the same as the impersonated user") if impersonator == impersonated
+      errors.add(:impersonator, :cannot_be_same_as_impersonated) if impersonator == impersonated
     end
 end

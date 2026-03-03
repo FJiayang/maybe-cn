@@ -14,6 +14,7 @@ zh-CN:
     header:
       buy: 买入
       current_market_price_label: 当前市场价格
+      linked_with_plaid: 已与 Plaid 关联
       overview: 概览
       purchase_price_label: 购买价格
       purchase_qty_label: 购买数量

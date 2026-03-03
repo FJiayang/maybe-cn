@@ -26,6 +26,7 @@ zh-CN:
       delete_subtitle: 这将删除该持仓以及该账户上所有相关交易。此操作无法撤销。
       delete_title: 删除持仓
       history: 历史
+      no_trade_history: 该持仓暂无交易历史记录。
       overview: 概览
       portfolio_weight_label: 投资组合权重
       settings: 设置

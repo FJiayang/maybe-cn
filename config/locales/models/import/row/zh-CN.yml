@@ -1,0 +1,12 @@
+---
+zh-CN:
+  activemodel:
+    errors:
+      models:
+        import/row:
+          attributes:
+            date:
+              must_match_format: 必须完全匹配格式： %{date_format}
+              must_be_between: 必须在 %{min_date} 和 %{max_date} 之间
+            currency:
+              not_valid_currency_code: 不是有效的货币代码

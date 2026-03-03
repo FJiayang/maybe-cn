@@ -24,8 +24,10 @@ module Maybe
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
 
-    # TODO: This is here for incremental adoption of localization.  This can be removed when all translations are implemented.
-    config.i18n.fallbacks = true
+    # i18n configuration - Chinese as default locale
+    config.i18n.default_locale = :'zh-CN'
+    config.i18n.available_locales = [:en, :'zh-CN']
+    config.i18n.fallbacks = [:en]
 
     config.app_mode = (ENV["SELF_HOSTED"] == "true" || ENV["SELF_HOSTING_ENABLED"] == "true" ? "self_hosted" : "managed").inquiry
 

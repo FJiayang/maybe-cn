@@ -1,0 +1,16 @@
+---
+zh-CN:
+  import:
+    uploads:
+      update:
+        notice: CSV 文件上传成功。
+        alert: 必须是有效的CSV文件，包含表头和至少一行数据。
+    confirms:
+      show:
+        alert: 数据无效，请编辑直到所有错误解决。
+    configurations:
+      update:
+        notice: 导入配置成功。
+    cleans:
+      show:
+        alert: 请在继续之前配置您的导入。

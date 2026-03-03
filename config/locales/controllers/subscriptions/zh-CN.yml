@@ -1,0 +1,11 @@
+---
+zh-CN:
+  subscriptions:
+    upgrade:
+      notice: 您已订阅。
+    create:
+      notice: 欢迎使用 Maybe！
+      alert: 您已开始或完成过试用期。请升级以继续。
+    success:
+      notice: 欢迎使用 Maybe！您的订阅已创建。
+      alert: 处理订阅时出现问题。请联系我们解决。

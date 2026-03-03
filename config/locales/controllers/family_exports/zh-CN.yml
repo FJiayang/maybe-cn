@@ -1,0 +1,9 @@
+---
+zh-CN:
+  family_exports:
+    create:
+      notice: 导出已开始。稍后即可下载。
+    download:
+      alert: 导出文件尚未准备好下载
+    require_admin:
+      alert: 访问被拒绝

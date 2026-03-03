@@ -1,0 +1,15 @@
+---
+zh-CN:
+  rules:
+    index:
+      rules: 规则
+      delete_all_rules: 删除所有规则
+      all_rules: 所有规则
+      new_rule: 新建规则
+      ai_cost_warning: AI 启用的规则操作会产生费用。请确保筛选范围尽可能窄，以避免不必要的成本。
+      sort_by: "排序方式："
+      name: 名称
+      updated_at: 更新时间
+      toggle_sort: 切换排序方向
+      no_rules: 暂无规则
+      no_rules_description: 设置规则以便在每次账户同步时对交易和其他数据执行操作。

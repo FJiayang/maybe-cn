@@ -14,6 +14,16 @@ en:
       edit: Edit category
     form:
       placeholder: Category name
+      color: Color
+      icon: Icon
+      classification: Classification
+      income: Income
+      expense: Expense
+      name: Name
+      unassigned: "(unassigned)"
+      parent_category: Parent category (optional)
+      poor_contrast: Poor contrast, choose darker color or
+      auto_adjust: auto-adjust.
     index:
       bootstrap: Use defaults (recommended)
       categories: Categories
@@ -21,6 +31,10 @@ en:
       categories_incomes: Income categories
       empty: No categories found
       new: New category
+      title: Categories
+      add_category: Add category
+      income: Income
+      expense: Expense
     menu:
       loading: Loading...
     new:
@@ -32,3 +46,13 @@ en:
       show:
         bootstrap: Generate default categories
         empty: No categories found
+    form:
+      name: Name
+      color: Color
+      parent: Parent category
+    deletions:
+      show:
+        title: Delete Category
+        subtitle: Deleting this category will unassign all associated transactions
+        confirm: I understand, delete this category
+        cancel: Cancel

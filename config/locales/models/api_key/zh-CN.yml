@@ -1,0 +1,23 @@
+---
+zh-CN:
+  activerecord:
+    attributes:
+      api_key:
+        name: 名称
+        scopes: 权限范围
+        source: 来源
+        expires_at: 过期时间
+        revoked_at: 撤销时间
+        last_used_at: 最后使用时间
+    models:
+      api_key: API 密钥
+    errors:
+      models:
+        api_key:
+          attributes:
+            scopes:
+              must_include_at_least_one_permission: 必须包含至少一个权限
+              can_only_have_one_permission_level: 只能有一个权限级别
+              must_be_read_or_read_write: 必须是 'read' 或 'read_write'
+            user:
+              can_only_have_one_active_api_key_per_source: 每个来源（%{source}）只能有一个活跃的 API 密钥

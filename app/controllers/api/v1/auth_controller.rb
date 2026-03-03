@@ -10,13 +10,13 @@ module Api
       def signup
         # Check if invite code is required
         if invite_code_required? && params[:invite_code].blank?
-          render json: { error: "Invite code is required" }, status: :forbidden
+          render json: { error: I18n.t("api.errors.invite_code_required") }, status: :forbidden
           return
         end
 
         # Validate invite code if provided
         if params[:invite_code].present? && !InviteCode.exists?(token: params[:invite_code]&.downcase)
-          render json: { error: "Invalid invite code" }, status: :forbidden
+          render json: { error: I18n.t("api.errors.invalid_invite_code") }, status: :forbidden
           return
         end
 
@@ -29,7 +29,7 @@ module Api
 
         # Validate device info
         unless valid_device_info?
-          render json: { error: "Device information is required" }, status: :bad_request
+          render json: { error: I18n.t("api.errors.device_info_required") }, status: :bad_request
           return
         end
 
@@ -69,7 +69,7 @@ module Api
           if user.otp_required?
             unless params[:otp_code].present? && user.verify_otp?(params[:otp_code])
               render json: {
-                error: "Two-factor authentication required",
+                error: I18n.t("api.errors.mfa_required"),
                 mfa_required: true
               }, status: :unauthorized
               return
@@ -78,7 +78,7 @@ module Api
 
           # Validate device info
           unless valid_device_info?
-            render json: { error: "Device information is required" }, status: :bad_request
+            render json: { error: I18n.t("api.errors.device_info_required") }, status: :bad_request
             return
           end
 
@@ -95,7 +95,7 @@ module Api
             }
           )
         else
-          render json: { error: "Invalid email or password" }, status: :unauthorized
+          render json: { error: I18n.t("api.errors.invalid_email_or_password") }, status: :unauthorized
         end
       end
 
@@ -104,7 +104,7 @@ module Api
         refresh_token = params[:refresh_token]
 
         unless refresh_token.present?
-          render json: { error: "Refresh token is required" }, status: :bad_request
+          render json: { error: I18n.t("api.errors.refresh_token_required") }, status: :bad_request
           return
         end
 
@@ -112,7 +112,7 @@ module Api
         access_token = Doorkeeper::AccessToken.by_refresh_token(refresh_token)
 
         if access_token.nil? || access_token.revoked?
-          render json: { error: "Invalid refresh token" }, status: :unauthorized
+          render json: { error: I18n.t("api.errors.invalid_refresh_token") }, status: :unauthorized
           return
         end
 
@@ -152,14 +152,14 @@ module Api
           errors = []
 
           if password.blank?
-            errors << "Password can't be blank"
+            errors << I18n.t("api.password_errors.blank")
             return errors
           end
 
-          errors << "Password must be at least 8 characters" if password.length < 8
-          errors << "Password must include both uppercase and lowercase letters" unless password.match?(/[A-Z]/) && password.match?(/[a-z]/)
-          errors << "Password must include at least one number" unless password.match?(/\d/)
-          errors << "Password must include at least one special character" unless password.match?(/[!@#$%^&*(),.?":{}|<>]/)
+          errors << I18n.t("api.password_errors.too_short") if password.length < 8
+          errors << I18n.t("api.password_errors.uppercase_lowercase") unless password.match?(/[A-Z]/) && password.match?(/[a-z]/)
+          errors << I18n.t("api.password_errors.number") unless password.match?(/\d/)
+          errors << I18n.t("api.password_errors.special_char") unless password.match?(/[!@#$%^&*(),.?":{}|<>]/)
 
           errors
         end

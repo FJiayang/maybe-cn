@@ -1,37 +1,37 @@
 module ImportsHelper
   def mapping_label(mapping_class)
     {
-      "Import::AccountTypeMapping" => "Account Type",
-      "Import::AccountMapping" => "Account",
-      "Import::CategoryMapping" => "Category",
-      "Import::TagMapping" => "Tag"
+      "Import::AccountTypeMapping" => I18n.t("helpers.imports.mapping_labels.account_type"),
+      "Import::AccountMapping" => I18n.t("helpers.imports.mapping_labels.account"),
+      "Import::CategoryMapping" => I18n.t("helpers.imports.mapping_labels.category"),
+      "Import::TagMapping" => I18n.t("helpers.imports.mapping_labels.tag")
     }.fetch(mapping_class.name)
   end
 
   def import_col_label(key)
     {
-      date: "Date",
-      amount: "Amount",
-      name: "Name",
-      currency: "Currency",
-      category: "Category",
-      tags: "Tags",
-      account: "Account",
-      notes: "Notes",
-      qty: "Quantity",
-      ticker: "Ticker",
-      exchange: "Exchange",
-      price: "Price",
-      entity_type: "Type"
+      date: I18n.t("helpers.imports.col_labels.date"),
+      amount: I18n.t("helpers.imports.col_labels.amount"),
+      name: I18n.t("helpers.imports.col_labels.name"),
+      currency: I18n.t("helpers.imports.col_labels.currency"),
+      category: I18n.t("helpers.imports.col_labels.category"),
+      tags: I18n.t("helpers.imports.col_labels.tags"),
+      account: I18n.t("helpers.imports.col_labels.account"),
+      notes: I18n.t("helpers.imports.col_labels.notes"),
+      qty: I18n.t("helpers.imports.col_labels.qty"),
+      ticker: I18n.t("helpers.imports.col_labels.ticker"),
+      exchange: I18n.t("helpers.imports.col_labels.exchange"),
+      price: I18n.t("helpers.imports.col_labels.price"),
+      entity_type: I18n.t("helpers.imports.col_labels.entity_type")
     }[key]
   end
 
   def dry_run_resource(key)
     map = {
-      transactions: DryRunResource.new(label: "Transactions", icon: "credit-card", text_class: "text-cyan-500", bg_class: "bg-cyan-500/5"),
-      accounts: DryRunResource.new(label: "Accounts", icon: "layers", text_class: "text-orange-500", bg_class: "bg-orange-500/5"),
-      categories: DryRunResource.new(label: "Categories", icon: "shapes", text_class: "text-blue-500", bg_class: "bg-blue-500/5"),
-      tags: DryRunResource.new(label: "Tags", icon: "tags", text_class: "text-violet-500", bg_class: "bg-violet-500/5")
+      transactions: DryRunResource.new(label: I18n.t("helpers.imports.dry_run_resources.transactions"), icon: "credit-card", text_class: "text-cyan-500", bg_class: "bg-cyan-500/5"),
+      accounts: DryRunResource.new(label: I18n.t("helpers.imports.dry_run_resources.accounts"), icon: "layers", text_class: "text-orange-500", bg_class: "bg-orange-500/5"),
+      categories: DryRunResource.new(label: I18n.t("helpers.imports.dry_run_resources.categories"), icon: "shapes", text_class: "text-blue-500", bg_class: "bg-blue-500/5"),
+      tags: DryRunResource.new(label: I18n.t("helpers.imports.dry_run_resources.tags"), icon: "tags", text_class: "text-violet-500", bg_class: "bg-violet-500/5")
     }
 
     map[key]

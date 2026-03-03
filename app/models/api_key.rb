@@ -78,17 +78,17 @@ class ApiKey < ApplicationRecord
 
     def scopes_not_empty
       if scopes.blank? || (scopes.is_a?(Array) && (scopes.empty? || scopes.all?(&:blank?)))
-        errors.add(:scopes, "must include at least one permission")
+        errors.add(:scopes, :must_include_at_least_one_permission)
       elsif scopes.is_a?(Array) && scopes.length > 1
-        errors.add(:scopes, "can only have one permission level")
+        errors.add(:scopes, :can_only_have_one_permission_level)
       elsif scopes.is_a?(Array) && !%w[read read_write].include?(scopes.first)
-        errors.add(:scopes, "must be either 'read' or 'read_write'")
+        errors.add(:scopes, :must_be_read_or_read_write)
       end
     end
 
     def one_active_key_per_user_per_source
       if user&.api_keys&.active&.where(source: source)&.where&.not(id: id)&.exists?
-        errors.add(:user, "can only have one active API key per source (#{source})")
+        errors.add(:user, :can_only_have_one_active_api_key_per_source, source: source)
       end
     end
 end

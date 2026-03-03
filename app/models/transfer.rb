@@ -103,12 +103,12 @@ class Transfer < ApplicationRecord
   private
     def transfer_has_different_accounts
       return unless inflow_transaction&.entry && outflow_transaction&.entry
-      errors.add(:base, "Must be from different accounts") if to_account == from_account
+      errors.add(:base, :must_be_from_different_accounts) if to_account == from_account
     end
 
     def transfer_has_same_family
       return unless inflow_transaction&.entry && outflow_transaction&.entry
-      errors.add(:base, "Must be from same family") unless to_account&.family == from_account&.family
+      errors.add(:base, :must_be_from_same_family) unless to_account&.family == from_account&.family
     end
 
     def transfer_has_opposite_amounts
@@ -122,10 +122,10 @@ class Transfer < ApplicationRecord
 
       if inflow_entry.currency == outflow_entry.currency
         # For same currency, amounts must be exactly opposite
-        errors.add(:base, "Must have opposite amounts") if inflow_amount + outflow_amount != 0
+        errors.add(:base, :must_have_opposite_amounts) if inflow_amount + outflow_amount != 0
       else
         # For different currencies, just check the signs are opposite
-        errors.add(:base, "Must have opposite amounts") unless inflow_amount.negative? && outflow_amount.positive?
+        errors.add(:base, :must_have_opposite_amounts) unless inflow_amount.negative? && outflow_amount.positive?
       end
     end
 
@@ -133,6 +133,6 @@ class Transfer < ApplicationRecord
       return unless inflow_transaction&.entry && outflow_transaction&.entry
 
       date_diff = (inflow_transaction.entry.date - outflow_transaction.entry.date).abs
-      errors.add(:base, "Must be within 4 days") if date_diff > 4
+      errors.add(:base, :must_be_within_4_days) if date_diff > 4
     end
 end

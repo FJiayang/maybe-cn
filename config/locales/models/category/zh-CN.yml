@@ -1,0 +1,19 @@
+---
+zh-CN:
+  activerecord:
+    attributes:
+      category:
+        name: 名称
+        color: 颜色
+        lucide_icon: 图标
+        classification: 分类
+        parent: 父分类
+    models:
+      category: 分类
+    errors:
+      models:
+        category:
+          attributes:
+            parent:
+              cant_have_more_than_2_levels: 不能超过 2 级子分类
+              must_have_same_classification_as_parent: 必须与父分类的分类相同

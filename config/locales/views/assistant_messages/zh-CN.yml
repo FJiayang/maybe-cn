@@ -1,0 +1,9 @@
+---
+zh-CN:
+  assistant_messages:
+    assistant_message:
+      assistant_reasoning: AI 推理过程
+    tool_calls:
+      tool_calls: 工具调用
+      function: "函数："
+      arguments: "参数："

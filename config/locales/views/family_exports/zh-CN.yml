@@ -1,0 +1,21 @@
+---
+zh-CN:
+  family_exports:
+    list:
+      export_from: "导出于"
+      exporting: "正在导出..."
+      download: "下载"
+      failed: "失败"
+      no_exports: "暂无导出记录"
+    new:
+      title: "导出您的数据"
+      subtitle: "下载您所有的财务数据"
+      whats_included: "包含内容："
+      accounts_balances: "所有账户和余额"
+      transaction_history: "交易历史"
+      investment_trades: "投资交易"
+      categories_tags: "分类和标签"
+      note: "注意："
+      note_content: "此导出包含您的所有数据，但只有部分数据可以通过 CSV 导入功能重新导入到 Maybe。我们支持账户、交易（包括分类和标签）以及交易导入。其他账户数据无法导入，仅供您自己记录使用。"
+      cancel: "取消"
+      export_data: "导出数据"

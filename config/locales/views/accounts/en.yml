@@ -31,6 +31,12 @@ en:
         manual_entry: Enter account balance
         title: How would you like to add it?
       title: What would you like to add?
+      container:
+        previous: Previous
+        next: Next
+        select: Select
+        navigate: Navigate
+        close: Close
     show:
       activity:
         amount: Amount

@@ -1,0 +1,9 @@
+---
+zh-CN:
+  family_merchants:
+    index:
+      merchants: 商家
+      new_merchant: 新建商家
+      title: 商家
+      empty: 未找到商家
+      new: 新建商家

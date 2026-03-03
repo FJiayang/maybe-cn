@@ -3,7 +3,34 @@ en:
   pages:
     changelog:
       title: What's new
+    feedback:
+      page_title: Feedback
+      title: Leave feedback
+      description: If you have any specific feedback, let us know. Feel free to include links to videos or screenshots.
+      feature_request: Submit a feature request
+      bug_report: Submit a bug report
+      discuss: Discuss Maybe with others
+    redis_configuration_error:
+      page_title: Redis Configuration Required - Maybe
+      title: Redis Configuration Required
+      description: Your self-hosted Maybe installation requires Redis to be properly configured.
+      why_redis_title: Why is Redis required?
+      why_redis_description: Maybe uses Redis to power Sidekiq background jobs for syncing account data, processing imports, and other background operations that keep your financial data up to date.
+      view_setup_guide: View Setup Guide
+      setup_guide_hint: Follow our complete Docker setup guide to configure Redis
+      refresh_hint: After configuring Redis, refresh this page to continue.
+      refresh_page: Refresh Page
     dashboard:
+      title: Dashboard
+      welcome_back: "Welcome back, %{name}"
+      subtitle: Here's an overview of your finances
+      new: New
+      shutdown_notice:
+        title: We've made the difficult decision to shut down Maybe's hosted offering. Here's what happens next:
+        read_why: Read why we're doing this here
+        refund: You will receive a full refund.
+        export_deadline: You'll need to export your data by July 31, 2025. You can
+        export_here: export here
       net_worth_chart:
         data_not_available: Data not available for the selected period
         title: Net Worth
@@ -12,3 +39,22 @@ en:
         no_account_subtitle: Since no accounts have been added, there's no data to
           display. Add your first accounts to start viewing dashboard data.
         no_account_title: No accounts yet
+        add_account: Add account
+      cashflow_sankey:
+        title: Cash Flow
+        no_data_title: No cash flow data for this period
+        no_data_description: Add transactions to show cash flow data or expand the time range
+        add_transaction: Add transaction
+      balance_sheet:
+        assets: Assets
+        liabilities: Liabilities
+        net_worth: Net Worth
+        name: Name
+        weight: Weight
+        value: Value
+        no_data_title: No %{name}
+        no_data_description: Add your %{name} accounts to see the full breakdown
+      no_accounts_graph_placeholder:
+        title: No accounts yet
+        description: Add accounts to show net worth data
+        add_account: Add account

@@ -1,0 +1,9 @@
+---
+en:
+  family_merchants:
+    index:
+      merchants: Merchants
+      new_merchant: New merchant
+      title: Merchants
+      empty: No merchants found
+      new: New merchant

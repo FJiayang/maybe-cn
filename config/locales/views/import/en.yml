@@ -1,0 +1,110 @@
+---
+en:
+  import:
+    uploads:
+      show:
+        title: Import your data
+        description: Paste or upload your CSV file below.  Please review the instructions
+          in the table below before beginning.
+        upload_csv: Upload CSV
+        copy_paste: Copy & Paste
+        account_optional: Account (optional)
+        multi_account_import: Multi-account import
+        browse: Browse
+        browse_hint: to add your CSV file here
+        upload_csv_btn: Upload CSV
+        paste_hint: Paste your CSV file contents here
+        download_sample: Download a sample CSV
+        sample_hint: to see the required CSV format
+    cleans:
+      show:
+        title: Clean your data
+        description: Edit your data in the table below.  Red cells are invalid.
+        errors_notice: You have errors in your data.  Hover over the error to see
+          details.
+        errors_notice_mobile: You have errors in your data.  Tap over the error tooltip to see
+          details.
+        data_cleaned: Your data has been cleaned
+        next_step: Next step
+        all_rows: All rows
+        error_rows: Error rows
+    configurations:
+      show:
+        title: Configure your import
+        description: Select the columns that correspond to each field in your CSV.
+        template_found: Template configuration found
+        template_description: We found a configuration from a previous import for this account.  Would you like to apply it to this import?
+        manually_configure: Manually configure
+        apply_template: Apply template
+        sample_data: Sample data from your uploaded CSV
+      transaction_import:
+        date_format_label: Date format
+        date: Date
+        select_column: Select column
+        select_format: Select format
+        amount: Amount
+        default: Default
+        currency: Currency
+        format: Format
+        amount_type_strategy: Amount type strategy
+        select_strategy: Select strategy
+        amount_type: Amount type
+        select_convention: Select convention
+        incomes_positive: Incomes are positive
+        incomes_negative: Incomes are negative
+        set: Set
+        as_amount_type_column: as amount type column
+        as_income_value: 'as "income" (inflow) value'
+        leave_empty: Leave empty
+        account: Account
+        name: Name
+        category: Category
+        tags: Tags
+        notes: Notes
+        apply_configuration: Apply configuration
+      trade_import:
+        date_format_label: Date format
+        select_column: Select column
+        date: Date
+        quantity: Quantity
+        buys_positive: Buys are positive qty
+        buys_negative: Buys are negative qty
+        default: Default
+        currency: Currency
+        format: Format
+        select_format: Select format
+        ticker: Ticker
+        leave_empty: Leave empty
+        stock_exchange_code: Stock exchange code
+        price: Price
+        account: Account
+        name: Name
+        note: "Note:"
+        security_provider_note: "The security prices provider is not configured.  Your trade imports will work, but Maybe will not backfill price history.  Please go to your settings to configure this."
+        apply_configuration: Apply configuration
+    confirms:
+      show:
+        account_mapping_title: Assign your accounts
+        account_mapping_description: Assign all of your imported file's accounts to
+          Maybe's existing accounts.  You can also add new accounts or leave them
+          uncategorized.
+        account_type_mapping_title: Assign your account types
+        account_type_mapping_description: Assign all of your imported file's account
+          types to Maybe's
+        category_mapping_title: Assign your categories
+        category_mapping_description: Assign all of your imported file's categories
+          to Maybe's existing categories.  You can also add new categories or leave
+          them uncategorized.
+        tag_mapping_title: Assign your tags
+        tag_mapping_description: Assign all of your imported file's tags to Maybe's
+          existing tags.  You can also add new tags or leave them uncategorized.
+        step_number: "Step %{number}"
+      mappings:
+        create_account: Create account
+        csv_mapping_label: "%{mapping} in CSV"
+        maybe_mapping_label: "%{mapping} in Maybe"
+        no_accounts: You don't have any accounts yet. Please create an account that
+          we can use for (unassigned) rows in your CSV or go back to the Clean step
+          and provide an account name we can use.
+        rows_label: Rows
+        unassigned_account: Need to create a new account for unassigned rows?
