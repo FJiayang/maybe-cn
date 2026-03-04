@@ -37,10 +37,10 @@ class RulesController < ApplicationController
     redirect_back_or_to rules_path, notice: t(".notice", type: @rule.resource_type.humanize)
   end
 
-  confirm
+  def confirm
   end
 
-  edit
+  def edit
   end
 
   def update
