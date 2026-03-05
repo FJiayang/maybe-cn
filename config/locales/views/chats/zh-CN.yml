@@ -17,7 +17,7 @@ zh-CN:
       greeting: "嗨 %{name}！我是 Maybe 构建的 AI 助手，可以帮助你管理财务。我可以访问网络和你的账户数据。"
       command_hint: 你可以使用
       command_hint_suffix: 来访问命令
-      sample_questions: 你可以问我以下问题：
+      sample_questions: "你可以问我以下问题："
       questions:
         evaluate_portfolio: 评估投资组合
         spending_insights: 显示消费分析
@@ -25,6 +25,6 @@ zh-CN:
     ai_consent:
       title: 启用 Maybe AI
       description_available: Maybe AI 可以回答财务问题并根据你的数据提供洞察。要使用此功能，你需要明确启用它。
-      description_unavailable: 要使用 AI 助手，你需要在自托管实例中设置 <code class="bg-surface-inset px-1 py-0.5 rounded font-mono text-xs">OPENAI_ACCESS_TOKEN</code> 环境变量。
+      description_unavailable: "要在自托管实例中设置 <code class=\"bg-surface-inset px-1 py-0.5 rounded font-mono text-xs\">OPENAI_ACCESS_TOKEN</code> 环境变量才能使用 AI 助手。"
       enable: 启用 Maybe AI
       disable_info: 随时可禁用。发送到我们 LLM 提供商的所有数据都是匿名的。

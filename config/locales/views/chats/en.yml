@@ -17,7 +17,7 @@ en:
       greeting: "Hi %{name}! I'm the AI assistant built into Maybe, and I can help you manage your finances. I have access to the web and your account data."
       command_hint: You can use
       command_hint_suffix: to access commands
-      sample_questions: You can ask me things like:
+      sample_questions: "You can ask me things like:"
       questions:
         evaluate_portfolio: Evaluate my portfolio
         spending_insights: Show spending insights
@@ -25,6 +25,6 @@ en:
     ai_consent:
       title: Enable Maybe AI
       description_available: Maybe AI can answer financial questions and provide insights based on your data. To use this feature, you need to explicitly enable it.
-      description_unavailable: To use the AI assistant, you need to set the <code class="bg-surface-inset px-1 py-0.5 rounded font-mono text-xs">OPENAI_ACCESS_TOKEN</code> environment variable in your self-hosted instance.
+      description_unavailable: "To use the AI assistant, you need to set the <code class=\"bg-surface-inset px-1 py-0.5 rounded font-mono text-xs\">OPENAI_ACCESS_TOKEN</code> environment variable in your self-hosted instance."
       enable: Enable Maybe AI
       disable_info: Disable anytime. All data sent to our LLM provider is anonymous.
