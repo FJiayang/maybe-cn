@@ -15,8 +15,11 @@ en:
     profile:
       country: Country
       first_name: First Name
-      household_name: Household Name
+      first_name_placeholder: Enter your first name
       last_name: Last Name
+      last_name_placeholder: Enter your last name
+      household_name: Household Name
+      household_name_placeholder: Enter household name
       profile_image: Profile Image
       submit: Continue
       subtitle: Let's complete your profile.
@@ -26,6 +29,15 @@ en:
         few questions to complete your profile and then get you all set up.
       setup: Set up account
       title: Let's set up your account
+      subtitle: Complete your profile to get started
+      first_name: First Name
+      first_name_placeholder: Enter your first name
+      last_name: Last Name
+      last_name_placeholder: Enter your last name
+      household_name: Household Name
+      household_name_placeholder: Enter household name
+      country: Country
+      submit: Continue
     goals:
       title: What brings you to Maybe?
       subtitle: Select one or more goals for using Maybe as your personal finance tool.

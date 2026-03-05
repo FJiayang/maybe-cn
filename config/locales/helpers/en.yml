@@ -1,0 +1,58 @@
+---
+en:
+  helpers:
+    transactions:
+      filters:
+        account: Account
+        date: Date
+        type: Type
+        amount: Amount
+        category: Category
+        tag: Tag
+        merchant: Merchant
+    imports:
+      mapping_labels:
+        account_type: Account type
+        account: Account
+        category: Category
+        tag: Tag
+      col_labels:
+        date: Date
+        amount: Amount
+        name: Name
+        currency: Currency
+        category: Category
+        tags: Tags
+        account: Account
+        notes: Notes
+        qty: Quantity
+        ticker: Ticker
+        exchange: Exchange
+        price: Price
+        entity_type: Type
+      dry_run_resources:
+        transactions: Transactions
+        accounts: Accounts
+        categories: Categories
+        tags: Tags
+    settings:
+      menu:
+        account: Account
+        preferences: Preferences
+        security: Security
+        self_hosting: Self-hosting
+        api_key: API Key
+        billing: Billing
+        accounts: Accounts
+        imports: Imports
+        tags: Tags
+        categories: Categories
+        rules: Rules
+        merchants: Merchants
+        whats_new: What's New
+        feedback: Feedback
+    categories:
+      names:
+        transfer: Transfer
+        payment: Payment
+        trade: Trade
