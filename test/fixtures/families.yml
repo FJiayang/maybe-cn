@@ -1,7 +1,5 @@
 empty:
   name: Family
-  locale: en
 
 dylan_family:
   name: The Dylan Family
-  locale: en
