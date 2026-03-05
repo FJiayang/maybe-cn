@@ -1,0 +1,13 @@
+---
+en:
+  activerecord:
+    attributes:
+      plaid_account:
+        plaid_id: Plaid ID
+        name: Name
+        official_name: Official name
+        mask: Mask
+        type: Type
+        subtype: Subtype
+    models:
+      plaid_account: Plaid Account

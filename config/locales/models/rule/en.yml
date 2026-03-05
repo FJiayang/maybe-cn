@@ -1,0 +1,19 @@
+---
+en:
+  activerecord:
+    attributes:
+      rule:
+        name: Name
+        resource_type: Resource type
+        conditions: Conditions
+        actions: Actions
+    models:
+      rule: Rule
+    errors:
+      models:
+        rule:
+          attributes:
+            base:
+              must_have_at_least_one_action: must have at least one action
+              cannot_have_duplicate_actions: cannot have duplicate actions %{action_types}
+              compound_conditions_cannot_be_nested: Compound conditions cannot be nested

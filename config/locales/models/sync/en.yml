@@ -1,0 +1,10 @@
+---
+en:
+  activerecord:
+    attributes:
+      sync:
+        status: Status
+        last_synced_at: Last synced at
+        error: Error
+    models:
+      sync: Sync

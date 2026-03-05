@@ -1,0 +1,19 @@
+---
+en:
+  activerecord:
+    attributes:
+      impersonation_session:
+        impersonator: Impersonator
+        impersonated: Impersonated user
+        status: Status
+    models:
+      impersonation_session: Impersonation Session
+    errors:
+      models:
+        impersonation_session:
+          attributes:
+            impersonator:
+              must_be_super_admin: must be a super admin to impersonate
+              cannot_be_same_as_impersonated: cannot be the same as the impersonated user
+            impersonated:
+              cannot_be_super_admin: cannot be a super admin

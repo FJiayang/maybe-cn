@@ -1,0 +1,23 @@
+---
+en:
+  activerecord:
+    attributes:
+      api_key:
+        name: Name
+        scopes: Scopes
+        source: Source
+        expires_at: Expires at
+        revoked_at: Revoked at
+        last_used_at: Last used at
+    models:
+      api_key: API Key
+    errors:
+      models:
+        api_key:
+          attributes:
+            scopes:
+              must_include_at_least_one_permission: must include at least one permission
+              can_only_have_one_permission_level: can only have one permission level
+              must_be_read_or_read_write: must be either 'read' or 'read_write'
+            user:
+              can_only_have_one_active_api_key_per_source: can only have one active API key per source (%{source})

@@ -1,0 +1,8 @@
+---
+en:
+  activemodel:
+    attributes:
+      period:
+        date_range: Date range
+    models:
+      period: Period
