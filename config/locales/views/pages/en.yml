@@ -26,7 +26,7 @@ en:
       subtitle: Here's an overview of your finances
       new: New
       shutdown_notice:
-        title: We've made the difficult decision to shut down Maybe's hosted offering. Here's what happens next:
+        title: "We've made the difficult decision to shut down Maybe's hosted offering. Here's what happens next:"
         read_why: Read why we're doing this here
         refund: You will receive a full refund.
         export_deadline: You'll need to export your data by July 31, 2025. You can
@@ -36,8 +36,7 @@ en:
         title: Net Worth
       no_account_empty_state:
         new_account: New account
-        no_account_subtitle: Since no accounts have been added, there's no data to
-          display. Add your first accounts to start viewing dashboard data.
+        no_account_subtitle: "Since no accounts have been added, there's no data to display. Add your first accounts to start viewing dashboard data."
         no_account_title: No accounts yet
         add_account: Add account
       cashflow_sankey:
