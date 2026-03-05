@@ -1,6 +1,20 @@
 ---
 en:
   transactions:
+    index:
+      title: Transactions
+      transaction: transaction
+      transactions: transactions
+      new_transaction: New transaction
+      new_rule: New rule
+      edit_rules: Edit rules
+      edit_categories: Edit categories
+      edit_tags: Edit tags
+      edit_merchants: Edit merchants
+      edit_imports: Edit imports
+      import: Import
+      category: Category
+      amount: Amount
     form:
       account: Account
       account_prompt: Select an Account
@@ -46,9 +60,6 @@ en:
       edit_merchants: Edit merchants
       edit_tags: Edit tags
       import: Import
-    index:
-      transaction: transaction
-      transactions: transactions
     searches:
       filters:
         amount_filter:

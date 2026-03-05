@@ -23,7 +23,7 @@ class ChatsTest < ApplicationSystemTestCase
     visit root_url
 
     within "#chat-container" do
-      assert_selector "h1", text: "Chats"
+      assert_selector "h1", text: "AI Assistant"
     end
   end
 
@@ -57,7 +57,7 @@ class ChatsTest < ApplicationSystemTestCase
 
     find("#chat-nav-back").click
 
-    assert_selector "h1", text: "Chats"
+    assert_selector "h1", text: "AI Assistant"
 
     click_on @user.chats.reload.first.title
 

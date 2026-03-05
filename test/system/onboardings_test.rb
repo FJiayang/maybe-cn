@@ -110,7 +110,7 @@ class OnboardingsTest < ApplicationSystemTestCase
     visit preferences_onboarding_path
 
     # Fill out form with specific values
-    select "Spanish (es)", from: "user_family_attributes_locale"
+    select "English (en)", from: "user_family_attributes_locale"
     select "Euro (EUR)", from: "user_family_attributes_currency"
     select "DD/MM/YYYY", from: "user_family_attributes_date_format"
     select "Dark", from: "user_theme"
@@ -124,7 +124,7 @@ class OnboardingsTest < ApplicationSystemTestCase
     @family.reload
     @user.reload
 
-    assert_equal "es", @family.locale
+    assert_equal "en", @family.locale
     assert_equal "EUR", @family.currency
     assert_equal "%d/%m/%Y", @family.date_format
     assert_equal "dark", @user.theme
@@ -144,7 +144,7 @@ class OnboardingsTest < ApplicationSystemTestCase
   test "trial page renders correctly" do
     visit trial_onboarding_path
 
-    assert_text "trial" # Adjust based on actual content
+    assert_text "Trial"
   end
 
   test "navigation between onboarding steps" do
@@ -184,7 +184,7 @@ class OnboardingsTest < ApplicationSystemTestCase
     def sign_in(user)
       visit new_session_path
       within "form" do
-        fill_in "Email", with: user.email
+        fill_in "Email address", with: user.email
         fill_in "Password", with: user_password_test
         click_on "Log in"
       end

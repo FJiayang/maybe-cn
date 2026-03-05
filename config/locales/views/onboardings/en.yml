@@ -38,3 +38,27 @@ en:
       optimization: Analyze and optimize accounts
       reduce_stress: Reduce financial stress or anxiety
       submit: Next
+    trial:
+      try_title: Try
+      no_credit_card: No Credit Card
+      trial_description: Start your free trial today
+      try_button: Start Free Trial
+      continue_trial: Continue Trial
+      upgrade: Upgrade
+      how_trial_works: How Trial Works
+      today: Today
+      today_description: Start your free trial
+      in_13_days: "In 13 Days"
+      in_13_days_description: Trial reminder
+      in_14_days: "In 14 Days"
+      in_14_days_description: Trial ends
+      whats_included: What's Included
+      feature_institutions: Financial Institutions
+      feature_unlimited_accounts: Unlimited Accounts
+      feature_investment_returns: Investment Returns
+      feature_transaction_tracking: Transaction Tracking
+      feature_ai_access: AI Access
+      feature_manual_tracking: Manual Tracking
+      feature_multiple_currencies: Multiple Currencies
+      feature_early_access: Early Access
+      feature_priority_support: Priority Support
