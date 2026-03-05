@@ -1,0 +1,16 @@
+---
+en:
+  imports:
+    publish:
+      notice: Your import has started in the background.
+      alert: "Your import exceeds the maximum row count of %{max_rows}."
+    show:
+      alert_upload: Please complete the file upload.
+      alert_mappings: Please complete the mapping configuration before proceeding.
+    revert:
+      notice: Import is being reverted in the background.
+    apply_template:
+      notice: Template applied.
+      alert: No template found, please configure your import manually.
+    destroy:
+      notice: Import deleted.

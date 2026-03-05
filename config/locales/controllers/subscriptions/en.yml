@@ -1,0 +1,11 @@
+---
+en:
+  subscriptions:
+    upgrade:
+      notice: You are already subscribed.
+    create:
+      notice: Welcome to Maybe!
+      alert: You have already started or completed a trial. Please upgrade to continue.
+    success:
+      notice: Welcome to Maybe! Your subscription has been created.
+      alert: There was a problem processing your subscription. Please contact us to resolve.

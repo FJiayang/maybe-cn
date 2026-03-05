@@ -8,7 +8,7 @@ module Localize
 
   private
     def switch_locale(&action)
-      locale = Current.family.try(:locale) || I18n.default_locale
+      locale = Current.family.try(:locale) || I18n.locale
       I18n.with_locale(locale, &action)
     end
 

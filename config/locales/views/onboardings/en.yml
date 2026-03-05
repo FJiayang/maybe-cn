@@ -22,7 +22,19 @@ en:
       subtitle: Let's complete your profile.
       title: Let's set up the basics
     show:
-      message: We’re really excited you’re here. In the next step we’ll ask you a
+      message: We're really excited you're here. In the next step we'll ask you a
         few questions to complete your profile and then get you all set up.
       setup: Set up account
-      title: Meet Maybe
+      title: Let's set up your account
+    goals:
+      title: What brings you to Maybe?
+      subtitle: Select one or more goals for using Maybe as your personal finance tool.
+      unified_accounts: View all accounts in one place
+      cashflow: Understand cash flow and spending
+      budgeting: Manage financial plans and budgets
+      partner: Manage finances with a partner
+      investments: Track investments
+      ai_insights: Let AI help me understand my finances
+      optimization: Analyze and optimize accounts
+      reduce_stress: Reduce financial stress or anxiety
+      submit: Next

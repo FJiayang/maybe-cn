@@ -6,3 +6,9 @@ en:
         date_range: Date range
     models:
       period: Period
+    errors:
+      models:
+        period:
+          attributes:
+            start_date:
+              must_be_before_end_date: must be before end date

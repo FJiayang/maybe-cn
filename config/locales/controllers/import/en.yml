@@ -1,0 +1,16 @@
+---
+en:
+  import:
+    uploads:
+      update:
+        notice: CSV uploaded successfully.
+        alert: Must be valid CSV with headers and at least one row of data
+    confirms:
+      show:
+        alert: You have invalid data, please edit until all errors are resolved
+    configurations:
+      update:
+        notice: Import configured successfully.
+    cleans:
+      show:
+        alert: Please configure your import before proceeding.

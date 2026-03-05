@@ -1,0 +1,17 @@
+---
+en:
+  api:
+    errors:
+      invite_code_required: Invite code is required
+      invalid_invite_code: Invalid invite code
+      device_info_required: Device information is required
+      invalid_email_or_password: Invalid email or password
+      mfa_required: Two-factor authentication required
+      refresh_token_required: Refresh token is required
+      invalid_refresh_token: Invalid refresh token
+    password_errors:
+      blank: Password can't be blank
+      too_short: Password must be at least 8 characters
+      uppercase_lowercase: Password must contain both uppercase and lowercase letters
+      number: Password must contain at least one number
+      special_char: Password must contain at least one special character
