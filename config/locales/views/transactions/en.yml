@@ -61,6 +61,8 @@ en:
       edit_tags: Edit tags
       import: Import
     searches:
+      form:
+        search_placeholder: "Search transactions ..."
       filters:
         amount_filter:
           equal_to: Equal to

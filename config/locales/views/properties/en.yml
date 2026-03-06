@@ -16,9 +16,10 @@ en:
       none: None
       postal_code: ZIP/Postal code
       postal_code_placeholder: '94105'
-      region: State/Province
+      region: State/Region
       region_placeholder: CA
       subtype_prompt: Select property type
+      property_type: Property type
       year_built: Year built
       year_built_placeholder: '2000'
     new:
@@ -30,3 +31,16 @@ en:
       trend: Trend
       unknown: Unknown
       year_built: Year Built
+    overview_fields:
+      name: Name
+      property_type: Property type
+      select_type: Select type
+      year_built_optional: Year Built (optional)
+      area_optional: Area (optional)
+      area_unit: Area unit
+    address:
+      address_line_1: Address Line 1
+      city: City
+      state_region: State/Region
+      postal_code: Postal Code
+      country: Country

@@ -73,6 +73,11 @@ zh-CN:
         remove_invitation: 移除邀请
         remove_member: 移除成员
         save: 保存
+        email_change_notice: 你已请求将邮箱更改为 %{email}。请前往你的邮箱确认以使更改生效。
+        data_import_export_title: 数据导入/导出
+        export_data: 导出数据
+        reset_account_confirm_title: 重置账户？
+        reset_account_confirm_body: 这将删除与你账户相关的所有数据。你的用户资料将保持活跃。
     securities:
       show:
         page_title: 安全

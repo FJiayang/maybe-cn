@@ -34,3 +34,9 @@ zh-CN:
       footer:
         privacy_policy: 隐私政策
         terms_of_service: 服务条款
+      confirm_dialog:
+        confirm: 确认
+      nav_item:
+        home: 首页
+        transactions: 交易
+        budgets: 预算

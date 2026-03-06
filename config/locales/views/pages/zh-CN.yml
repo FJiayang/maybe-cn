@@ -21,7 +21,6 @@ zh-CN:
       refresh_hint: 配置 Redis 后，刷新此页面继续。
       refresh_page: 刷新页面
     dashboard:
-      title: 仪表板
       welcome_back: "欢迎回来，%{name}"
       subtitle: 这是你的财务状况概览
       new: 新建

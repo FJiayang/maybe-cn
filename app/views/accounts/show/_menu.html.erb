@@ -16,7 +16,7 @@
   <% unless account.linked? %>
     <% menu.with_item(
       variant: "button",
-      text: t("accounts.show.menu.confirm_accept", name: account.name),
+      text: t(".confirm_accept", name: account.name),
       href: account_path(account),
       method: :delete,
       icon: "trash-2",

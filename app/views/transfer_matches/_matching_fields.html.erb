@@ -11,7 +11,7 @@
                 ["Match existing transaction (recommended)", "existing"],
                 ["Create new transaction", "new"]
               ],
-              { selected: "existing", label: "Matching method" },
+              { selected: "existing", label: t(".matching_method") },
               data: { action: "change->transfer-match#update" } %>
 
     <div data-transfer-match-target="existingSelect">
@@ -19,13 +19,13 @@
                 candidates.map { |entry|
                   [entry_name_detailed(entry), entry.id]
                 },
-                { label: "Matching transaction" } %>
+                { label: t(".matching_transaction") } %>
     </div>
 
     <div data-transfer-match-target="newSelect" class="hidden">
       <%= form.select :target_account_id,
                 accounts.map { |account| [account.name, account.id] },
-                { label: "Target account" } %>
+                { label: t(".target_account") } %>
     </div>
   </div>
 <% else %>
@@ -39,6 +39,6 @@
   <div>
     <%= form.select :target_account_id,
                 accounts.map { |account| [account.name, account.id] },
-                { label: "Target account" } %>
+                { label: t(".target_account") } %>
   </div>
 <% end %>

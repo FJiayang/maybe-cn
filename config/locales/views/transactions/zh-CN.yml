@@ -13,16 +13,12 @@ zh-CN:
       edit_imports: 编辑导入
       transaction: 交易
       transactions: 交易
+      category: 分类
+      amount: 金额
+    summary:
       total_transactions: 总交易数
       income: 收入
       expenses: 支出
-      category: 分类
-      amount: 金额
-      search_placeholder: 搜索交易...
-      filter: 筛选
-      clear_filters: 清除筛选
-      no_entries_found: 未找到条目
-      try_adding_entry: 尝试添加条目、编辑筛选条件或优化搜索
     form:
       account: 账户
       account_prompt: 选择账户
@@ -86,6 +82,8 @@ zh-CN:
       income: 收入
       expenses: 支出
     searches:
+      form:
+        search_placeholder: 搜索交易...
       filters:
         account_filter:
           filter_accounts: 筛选账户
