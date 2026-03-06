@@ -16,7 +16,7 @@ en:
       none: None
       postal_code: ZIP/Postal code
       postal_code_placeholder: '94105'
-      region: State/Province
+      region: State/Region
       region_placeholder: CA
       subtype_prompt: Select property type
       property_type: Property type
