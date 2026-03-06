@@ -19,6 +19,7 @@ en:
       region: State/Province
       region_placeholder: CA
       subtype_prompt: Select property type
+      property_type: Property type
       year_built: Year built
       year_built_placeholder: '2000'
     new:

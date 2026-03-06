@@ -6,6 +6,7 @@ en:
       account_prompt: Search account
       amount: Amount
       holding: Ticker symbol
+      ticker_symbol: Ticker symbol
       price: Price per share
       qty: Quantity
       submit: Add transaction

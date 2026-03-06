@@ -1,0 +1,175 @@
+---
+en:
+  common:
+    actions:
+      new: New
+      edit: Edit
+      delete: Delete
+      save: Save
+      cancel: Cancel
+      confirm: Confirm
+      back: Back
+      next: Next
+      import: Import
+      export: Export
+      search: Search
+      filter: Filter
+      submit: Submit
+      create: Create
+      update: Update
+      remove: Remove
+      dismiss: Dismiss
+      retry: Retry
+      copy: Copy
+      manage: Manage
+      upgrade: Upgrade
+      subscribe: Subscribe
+      sign_out: Sign out
+      sign_in: Sign in
+      sign_up: Sign up
+      try_again: Try again
+      complete_setup: Complete setup
+      publish: Publish
+      check_status: Check status
+      continue: Continue
+      apply: Apply
+      add: Add
+      view: View
+      start: Start
+      stop: Stop
+      enable: Enable
+      disable: Disable
+      refresh: Refresh
+      close: Close
+      open: Open
+      select: Select
+      upload: Upload
+      download: Download
+      generate: Generate
+      use_defaults: Use defaults
+      reapply: Reapply
+      reassign: Reassign
+      revert: Revert
+      revoke: Revoke
+      fix: Fix
+      today: Today
+      all: All
+      none: None
+      optional: Optional
+      required: Required
+      coming_soon: Coming soon
+      learn_more: Learn more
+
+    labels:
+      name: Name
+      description: Description
+      amount: Amount
+      date: Date
+      category: Category
+      account: Account
+      type: Type
+      status: Status
+      notes: Notes
+      tags: Tags
+      merchant: Merchant
+      currency: Currency
+      balance: Balance
+      value: Value
+      quantity: Quantity
+      price: Price
+      total: Total
+      percentage: Percentage
+      period: Period
+      start_date: Start date
+      end_date: End date
+      created_at: Created at
+      updated_at: Updated at
+      actions: Actions
+      details: Details
+      overview: Overview
+      settings: Settings
+      history: History
+      empty: Empty
+      loading: Loading
+      processing: Processing
+      completed: Completed
+      pending: Pending
+      failed: Failed
+      active: Active
+      inactive: Inactive
+      yes: Yes
+      no: No
+      true: "Yes"
+      false: "No"
+      income: Income
+      expense: Expense
+      transfer: Transfer
+      weight: Weight
+      count: Count
+      item: Item
+
+    messages:
+      empty_state: No data
+      loading: Loading...
+      error: An error occurred
+      success: Success
+      confirm_delete: Are you sure you want to delete?
+      confirm_action: Are you sure you want to perform this action?
+      no_results: No results found
+      try_again: Please try again
+      coming_soon: Coming soon
+      not_available: Not available
+      required_field: This field is required
+      invalid_format: Invalid format
+      select_option: Please select
+      search_placeholder: Search...
+      filter_placeholder: Filter...
+      uncategorized: Uncategorized
+      default: Default
+      leave_empty: Leave empty
+      select_column: Select column
+      select_format: Select format
+      select_strategy: Select strategy
+      select_convention: Select convention
+      select_type: Select type
+      multi_account_import: Multi-account import
+      unassigned: Unassigned
+
+    form:
+      placeholder:
+        name: Enter name
+        description: Enter description
+        amount: Enter amount
+        date: Select date
+        search: Search...
+        select: Please select...
+        optional: (optional)
+        enter_value: Enter value
+        enter_name: Enter name
+        enter_email: Enter email address
+        enter_password: Enter password
+        paste_csv: Paste your CSV file contents here
+        search_entries: Search entries...
+        search_transactions: Search transactions...
+        start_date: Start date
+        end_date: End date
+
+    nav:
+      home: Home
+      dashboard: Dashboard
+      accounts: Accounts
+      transactions: Transactions
+      budgets: Budgets
+      settings: Settings
+      profile: Profile
+      preferences: Preferences
+      security: Security
+      billing: Billing
+      categories: Categories
+      tags: Tags
+      merchants: Merchants
+      imports: Imports
+      rules: Rules
+      assistant: AI Assistant
+      back_to_dashboard: Back to dashboard
+      back_to_settings: Back to settings
