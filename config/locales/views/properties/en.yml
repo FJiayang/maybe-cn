@@ -31,3 +31,10 @@ en:
       trend: Trend
       unknown: Unknown
       year_built: Year Built
+    overview_fields:
+      name: Name
+      property_type: Property type
+      select_type: Select type
+      year_built_optional: Year Built (optional)
+      area_optional: Area (optional)
+      area_unit: Area unit
