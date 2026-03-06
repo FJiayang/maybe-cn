@@ -38,3 +38,9 @@ en:
       year_built_optional: Year Built (optional)
       area_optional: Area (optional)
       area_unit: Area unit
+    address:
+      address_line_1: Address Line 1
+      city: City
+      state_region: State/Region
+      postal_code: Postal Code
+      country: Country
