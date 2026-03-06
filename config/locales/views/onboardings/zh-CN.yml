@@ -1,17 +1,8 @@
 ---
 zh-CN:
   onboardings:
-    goals:
-      title: 你为什么使用 Maybe？
-      subtitle: 选择一个或多个目标，作为你的个人理财工具。
-      goal_unified_accounts: 在一个地方查看所有账户
-      goal_cashflow: 了解现金流和支出
-      goal_budgeting: 管理财务计划和预算
-      goal_partner: 与伴侣共同管理财务
-      goal_investments: 跟踪投资
-      goal_ai_insights: 让 AI 帮助我了解财务状况
-      goal_optimization: 分析和优化账户
-      goal_reduce_stress: 减少财务压力或焦虑
+    header:
+      sign_out: 退出登录
     show:
       title: 让我们设置你的账户
       subtitle: 首先，让我们完善你的个人资料。
@@ -23,6 +14,18 @@ zh-CN:
       household_name_placeholder: 家庭名称
       country: 国家/地区
       submit: 继续
+    goals:
+      title: 你想用 Maybe 做什么？
+      subtitle: 选择一个或多个你使用 Maybe 作为个人财务工具的目标。
+      unified_accounts: 在一个地方查看所有账户
+      cashflow: 了解现金流和支出
+      budgeting: 管理财务计划和预算
+      partner: 与伴侣共同管理财务
+      investments: 跟踪投资
+      ai_insights: 让 AI 帮助我了解财务状况
+      optimization: 分析和优化账户
+      reduce_stress: 减少财务压力或焦虑
+      submit: 下一步
     preferences:
       currency: 货币
       date_format: 日期格式
@@ -32,32 +35,27 @@ zh-CN:
       submit: 完成
       title: 配置偏好设置
       color_theme: 颜色主题
-      theme_system: 跟随系统
-      theme_light: 浅色
-      theme_dark: 深色
-      translation_notice: 请注意，我们仍在努力完善各种语言的翻译。
     trial:
-      try_for_14_days: 免费试用 Maybe 14 天
+      try_title: 试用 Maybe 14 天。
+      no_credit_card: 无需信用卡
+      trial_description: 开始试用将激活你的 Maybe 账户。你无需输入付款信息。
+      try_button: 试用 Maybe 14 天
       continue_trial: 继续试用
       upgrade: 升级
-      how_trial_works: 试用期如何工作
+      how_trial_works: 试用期如何运作
       today: 今天
-      today_description: 你将获得 Maybe 14 天免费试用
-      in_13_days: "13 天后（%{date}）"
+      today_description: 你将获得 Maybe 14 天的免费使用权
+      in_13_days: 13 天后（%{date}）
       in_13_days_description: 我们会提醒你试用期即将结束。
-      in_14_days: "14 天后（%{date}）"
-      in_14_days_description: 试用期结束 — 订阅以继续使用 Maybe
-      whats_included: 包含内容
-      institutions: 支持 10,000+ 金融机构连接
-      unlimited_accounts: 连接无限账户和账户类型
-      performance: 投资组合表现和投资回报
-      transactions: 全面的交易跟踪体验
-      ai_access: 无限访问 Maybe AI 对话
-      manual_tracking: 手动账户跟踪
-      multi_currency: 多货币和全球覆盖
-      early_access: 新功能抢先体验
-      priority_support: 优先人工支持
-    logout:
-      sign_out: 退出登录
-    onboarding_nav:
-      step: "步骤 %{current} / %{total}"
+      in_14_days: 14 天后（%{date}）
+      in_14_days_description: "试用期结束 — 订阅以继续使用 Maybe"
+      whats_included: 包含以下功能
+      feature_institutions: 可连接超过 10,000 家金融机构
+      feature_unlimited_accounts: 连接无限数量的账户和账户类型
+      feature_investment_returns: 跨投资组合的业绩和投资回报
+      feature_transaction_tracking: 全面的交易追踪体验
+      feature_ai_access: 无限制使用 Maybe AI 并与其聊天
+      feature_manual_tracking: 出色的手动账户追踪功能
+      feature_multiple_currencies: 支持多种货币，近乎全球覆盖
+      feature_early_access: 抢先体验新发布的功能
+      feature_priority_support: 团队优先人工支持

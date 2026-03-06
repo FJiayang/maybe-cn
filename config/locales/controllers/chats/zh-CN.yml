@@ -1,0 +1,9 @@
+---
+zh-CN:
+  chats:
+    update:
+      notice: 对话已更新
+    destroy:
+      notice: 对话已成功删除
+    new:
+      title: "新对话 %{time}"

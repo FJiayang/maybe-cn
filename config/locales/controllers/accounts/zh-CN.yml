@@ -1,0 +1,8 @@
+---
+zh-CN:
+  accounts:
+    sync_all:
+      notice: 正在同步账户...
+    destroy:
+      notice: 账户已安排删除
+      alert: 无法删除关联账户

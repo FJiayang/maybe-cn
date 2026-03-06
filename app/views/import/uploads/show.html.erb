@@ -30,7 +30,7 @@
               <div data-file-upload-target="uploadText" class="flex flex-col items-center">
                 <%= icon("plus", size: "lg", class: "mb-4 mx-auto") %>
                 <p class="mb-2 text-md text-gray text-center">
-                  <span class="font-medium text-primary">Browse</span> to add your CSV file here
+                  <span class="font-medium text-primary"><%= t(".browse") %></span> <%= t(".browse_hint") %>
                 </p>
               </div>
 
@@ -45,7 +45,7 @@
             </div>
           </div>
 
-          <%= form.submit "Upload CSV", disabled: @import.complete? %>
+          <%= form.submit t(".upload_csv_btn"), disabled: @import.complete? %>
         <% end %>
       <% end %>
 
@@ -60,10 +60,10 @@
           <%= form.text_area :raw_file_str,
                        rows: 10,
                        required: true,
-                       placeholder: "Paste your CSV file contents here",
+                       placeholder: t(".paste_hint"),
                        "data-auto-submit-form-target": "auto" %>
 
-          <%= form.submit "Upload CSV", disabled: @import.complete? %>
+          <%= form.submit t(".upload_csv_btn"), disabled: @import.complete? %>
         <% end %>
       <% end %>
     <% end %>
@@ -71,7 +71,7 @@
 
   <div class="flex justify-center">
     <span class="text-secondary text-sm">
-      <%= link_to "Download a sample CSV", "/imports/#{@import.id}/upload/sample_csv", class: "text-primary underline", data: { turbo: false } %> to see the required CSV format
+      <%= link_to t(".download_sample"), "/imports/#{@import.id}/upload/sample_csv", class: "text-primary underline", data: { turbo: false } %> <%= t(".sample_hint") %>
     </span>
   </div>
 </div>

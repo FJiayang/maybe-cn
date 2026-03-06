@@ -4,6 +4,8 @@ zh-CN:
     label:
       user:
         invite_code: 邀请码
+        email: 电子邮件
+        password: 密码
     submit:
       user:
         create: 继续
@@ -22,3 +24,8 @@ zh-CN:
       welcome_body: 首先，你需要注册一个新账户。然后你可以在应用中配置其他设置。
       welcome_title: 欢迎来到自托管 Maybe！
       password_placeholder: 输入你的密码
+      email_placeholder: you@example.com
+      password_length: 至少 8 个字符
+      password_case: 大写和小写字母
+      password_number: 一个数字 (0-9)
+      password_special: 一个特殊字符 (!, @, #, $, % 等)

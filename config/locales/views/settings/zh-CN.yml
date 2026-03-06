@@ -6,6 +6,15 @@ zh-CN:
         page_title: 账单
         subscription_subtitle: 更新你的订阅和账单详情
         subscription_title: 管理订阅
+        subscribed_to: 你当前订阅的是 <span class="font-medium">%{plan}</span>。
+        renews_on: 你的计划将于 <span class="font-medium">%{date}</span> 续订。
+        trialing: 你正在试用 Maybe
+        trial_days_remaining: 剩余 %{days} 天
+        not_subscribed: 你当前<span class="font-medium">未订阅</span>
+        not_subscribed_hint: 订阅 Maybe+ 后，你将在此处看到账单设置。
+        manage: 管理
+        choose_plan: 选择计划
+        billing_via_stripe: 通过 Stripe 付款
     preferences:
       show:
         country: 国家/地区
@@ -22,6 +31,8 @@ zh-CN:
         theme_system: 跟随系统
         theme_title: 主题
         timezone: 时区
+        i18n_note_html: 请注意，我们仍在为各种语言进行翻译工作。请查看 %{link} 了解更多信息。
+        i18n_issue_link: I18n 议题
     profiles:
       destroy:
         cannot_remove_self: 你无法将自己从账户中移除。
@@ -70,6 +81,20 @@ zh-CN:
     securities:
       show:
         page_title: 安全
+        mfa_title: 双因素认证
+        mfa_description: 通过启用双因素认证增强账户安全性
+        mfa_enabled_status_html: 双因素认证已<span class="font-medium text-green-600">启用</span>
+        mfa_enabled_hint: 你的账户受到额外的安全保护。
+        mfa_disabled_status_html: 双因素认证已<span class="font-medium text-red-600">禁用</span>
+        mfa_disabled_hint: 启用双因素认证为你的账户添加额外的安全层。
+        enable_mfa: 启用 2FA
+        disable_mfa: 禁用 2FA
+        disable_mfa_confirm_title: 禁用双因素认证
+        disable_mfa_confirm_body: 你确定要禁用双因素认证吗？这将使你的账户安全性降低。
+        change_password: 更改密码
+        current_password: 当前密码
+        new_password: 新密码
+        confirm_password: 确认密码
     settings_nav:
       accounts_label: 账户
       api_key_label: API 密钥

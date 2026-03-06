@@ -12,7 +12,7 @@ class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
     def sign_in(user)
       visit new_session_path
       within "form" do
-        fill_in "Email", with: user.email
+        fill_in "Email address", with: user.email
         fill_in "Password", with: user_password_test
         click_on "Log in"
       end
@@ -26,8 +26,10 @@ class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
     end
 
     def sign_out
-      find("#user-menu").click
-      click_button "Logout"
+      within "[data-testid='user-menu']" do
+        find("button").click
+      end
+      click_button "Log out"
 
       # Trigger Capybara's wait mechanism to avoid timing issues with logout
       find("h2", text: "Sign in to your account")

@@ -168,7 +168,7 @@ class User < ApplicationRecord
       return unless profile_image.attached?
 
       unless profile_image.content_type.in?(%w[image/jpeg image/png])
-        errors.add(:profile_image, "must be a JPEG or PNG")
+        errors.add(:profile_image, :must_be_jpeg_or_png)
         profile_image.purge
       end
     end

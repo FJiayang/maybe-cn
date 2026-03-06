@@ -6,9 +6,14 @@ zh-CN:
         page_title: 安全
         mfa_title: 双因素认证
         mfa_description: 通过启用双因素认证增强账户安全性
+        mfa_enabled_status_html: 双因素认证已<span class="font-medium text-green-600">启用</span>
+        mfa_enabled_hint: 你的账户受到额外的安全保护。
+        mfa_disabled_status_html: 双因素认证已<span class="font-medium text-red-600">禁用</span>
+        mfa_disabled_hint: 启用双因素认证为你的账户添加额外的安全层。
         enable_mfa: 启用 2FA
         disable_mfa: 禁用 2FA
-        disable_mfa_confirm: 你确定要禁用双因素认证吗？
+        disable_mfa_confirm_title: 禁用双因素认证
+        disable_mfa_confirm_body: 你确定要禁用双因素认证吗？这将使你的账户安全性降低。
         change_password: 更改密码
         current_password: 当前密码
         new_password: 新密码

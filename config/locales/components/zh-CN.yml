@@ -1,0 +1,8 @@
+---
+zh-CN:
+  ui:
+    account_page:
+      tabs:
+        activity: 活动
+        holdings: 持仓
+        overview: 概览

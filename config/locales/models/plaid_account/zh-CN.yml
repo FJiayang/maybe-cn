@@ -1,0 +1,17 @@
+---
+zh-CN:
+  activerecord:
+    attributes:
+      plaid_account:
+        name: 名称
+        currency: 货币
+        current_balance: 当前余额
+        available_balance: 可用余额
+    models:
+      plaid_account: Plaid 账户
+    errors:
+      models:
+        plaid_account:
+          attributes:
+            base:
+              must_have_current_or_available_balance: Plaid 账户必须有当前余额或可用余额

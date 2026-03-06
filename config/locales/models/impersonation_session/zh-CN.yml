@@ -1,0 +1,19 @@
+---
+zh-CN:
+  activerecord:
+    attributes:
+      impersonation_session:
+        impersonator: 模拟者
+        impersonated: 被模拟用户
+        status: 状态
+    models:
+      impersonation_session: 模拟会话
+    errors:
+      models:
+        impersonation_session:
+          attributes:
+            impersonator:
+              must_be_super_admin: 必须是超级管理员才能模拟
+              cannot_be_same_as_impersonated: 不能与被模拟用户相同
+            impersonated:
+              cannot_be_super_admin: 不能是超级管理员

@@ -1,0 +1,17 @@
+---
+zh-CN:
+  api:
+    errors:
+      invite_code_required: 需要邀请码
+      invalid_invite_code: 邀请码无效
+      device_info_required: 需要设备信息
+      invalid_email_or_password: 邮箱或密码无效
+      mfa_required: 需要两步验证
+      refresh_token_required: 需要刷新令牌
+      invalid_refresh_token: 刷新令牌无效
+    password_errors:
+      blank: 密码不能为空
+      too_short: 密码至少需要8个字符
+      uppercase_lowercase: 密码必须同时包含大小写字母
+      number: 密码必须包含至少一个数字
+      special_char: 密码必须包含至少一个特殊字符

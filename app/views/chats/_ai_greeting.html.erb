@@ -2,27 +2,27 @@
   <%= render "chats/ai_avatar" %>
 
   <div class="max-w-[85%] text-sm space-y-4 text-primary">
-    <p>Hey <%= Current.user&.first_name || "there" %>! I'm an AI built by Maybe to help with your finances. I have access to the web and your account data.</p>
+    <p><%= t(".greeting", name: Current.user&.first_name || t("chats.ai_greeting.there")) %></p>
 
     <p>
-      You can use <span class="bg-container border border-secondary px-1.5 py-0.5 rounded font-mono text-xs">/</span> to access commands
+      <%= t(".command_hint") %><span class="bg-container border border-secondary px-1.5 py-0.5 rounded font-mono text-xs">/</span> <%= t(".command_hint_suffix") %>
     </p>
 
     <div class="space-y-3">
-      <p>Here's a few questions you can ask:</p>
+      <p><%= t(".sample_questions") %></p>
 
       <% questions = [
         {
           icon: "chart-area",
-          text: t(".evaluate_portfolio")
+          text: t(".questions.evaluate_portfolio")
         },
         {
           icon: "wallet-minimal",
-          text: t(".show_spending_insights")
+          text: t(".questions.spending_insights")
         },
         {
           icon: "alert-triangle",
-          text: t(".find_unusual_patterns")
+          text: t(".questions.unusual_patterns")
         }
       ] %>
 

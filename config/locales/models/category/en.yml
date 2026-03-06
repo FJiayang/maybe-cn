@@ -1,0 +1,19 @@
+---
+en:
+  activerecord:
+    attributes:
+      category:
+        name: Name
+        color: Color
+        lucide_icon: Icon
+        classification: Classification
+        parent: Parent category
+    models:
+      category: Category
+    errors:
+      models:
+        category:
+          attributes:
+            parent:
+              cant_have_more_than_2_levels: can't have more than 2 levels of subcategories
+              must_have_same_classification_as_parent: must have same classification as parent

@@ -1,0 +1,19 @@
+---
+zh-CN:
+  activerecord:
+    attributes:
+      rule:
+        name: 名称
+        resource_type: 资源类型
+        conditions: 条件
+        actions: 操作
+    models:
+      rule: 规则
+    errors:
+      models:
+        rule:
+          attributes:
+            base:
+              must_have_at_least_one_action: 必须至少有一个操作
+              cannot_have_duplicate_actions: 规则不能有重复的操作 %{action_types}
+              compound_conditions_cannot_be_nested: 复合条件不能嵌套

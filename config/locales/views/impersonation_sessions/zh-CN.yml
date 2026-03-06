@@ -1,7 +1,37 @@
 ---
 zh-CN:
   impersonation_sessions:
+    approve:
+      success: 请求已批准
+    complete:
+      success: 会话已完成
     create:
       success: 模拟会话已启动
     destroy:
       success: 模拟会话已结束
+    join:
+      success: 已加入会话
+    leave:
+      success: 已离开会话
+    reject:
+      success: 请求已拒绝
+    approval_bar:
+      access_title: "访问%{type}"
+      session: 会话
+      request: 请求
+      pending_description: Maybe 支持人员已请求访问您的账户（可能是为了帮助您处理支持请求）。如果您批准该请求，他们的所有操作都将被记录以供安全和审计目的。
+      approve: 批准
+      reject: 拒绝
+      in_progress_description: Maybe 财务团队的某人正在查看您的数据。您可以随时结束会话。
+      end_session: 结束会话
+      error_message: 出现错误。请联系我们。
+    super_admin_bar:
+      super_admin: 超级管理员
+      jobs: 任务
+      impersonating: "模拟用户："
+      leave: 离开
+      terminate: 终止
+      join_a_session: 加入会话
+      join: 加入
+      uuid_placeholder: UUID
+      request_impersonation: 请求模拟

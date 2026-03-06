@@ -1,0 +1,11 @@
+---
+zh-CN:
+  rules:
+    apply:
+      notice: "%{type}规则已激活"
+    update:
+      notice: 规则已更新
+    destroy:
+      notice: 规则已删除
+    destroy_all:
+      notice: 所有规则已删除

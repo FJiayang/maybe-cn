@@ -1,0 +1,16 @@
+---
+zh-CN:
+  imports:
+    publish:
+      notice: 导入已在后台开始。
+      alert: "您的导入超过了最大行数限制 %{max_rows}。"
+    show:
+      alert_upload: 请完成文件上传。
+      alert_mappings: 请在继续之前完成映射配置。
+    revert:
+      notice: 导入正在后台回滚。
+    apply_template:
+      notice: 模板已应用。
+      alert: 未找到模板，请手动配置您的导入。
+    destroy:
+      notice: 导入已删除。

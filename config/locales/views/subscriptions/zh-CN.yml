@@ -5,3 +5,14 @@ zh-CN:
       success: 订阅创建成功
     destroy:
       success: 订阅已取消
+    upgrade:
+      upgrade: 升级
+      account_settings: 账户设置
+      sign_out: 退出登录
+      trial_remaining: "您的试用还剩 %{days} 天"
+      trial_over: 您的试用已结束
+      unlock: 解锁
+      today: 今天
+      pick_plan: 要继续使用 Maybe，请在下方选择一个计划。
+      subscribe: 订阅并解锁 Maybe
+      stripe_redirect: 在下一步中，您将被重定向到 Stripe，它负责我们的账单处理。

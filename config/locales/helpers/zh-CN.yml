@@ -1,0 +1,57 @@
+zh-CN:
+  helpers:
+    transactions:
+      filters:
+        account: 账户
+        date: 日期
+        type: 类型
+        amount: 金额
+        category: 分类
+        tag: 标签
+        merchant: 商家
+    imports:
+      mapping_labels:
+        account_type: 账户类型
+        account: 账户
+        category: 分类
+        tag: 标签
+      col_labels:
+        date: 日期
+        amount: 金额
+        name: 名称
+        currency: 货币
+        category: 分类
+        tags: 标签
+        account: 账户
+        notes: 备注
+        qty: 数量
+        ticker: 代码
+        exchange: 交易所
+        price: 价格
+        entity_type: 类型
+      dry_run_resources:
+        transactions: 交易
+        accounts: 账户
+        categories: 分类
+        tags: 标签
+    settings:
+      menu:
+        account: 账户
+        preferences: 偏好设置
+        security: 安全
+        self_hosting: 自托管
+        api_key: API密钥
+        billing: 账单
+        accounts: 账户列表
+        imports: 导入
+        tags: 标签
+        categories: 分类
+        rules: 规则
+        merchants: 商家
+        whats_new: 更新日志
+        feedback: 反馈
+    categories:
+      names:
+        transfer: 转账
+        payment: 支付
+        trade: 交易

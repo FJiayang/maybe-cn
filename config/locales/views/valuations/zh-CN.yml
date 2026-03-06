@@ -29,3 +29,21 @@ zh-CN:
       overview: 概览
       settings: 设置
       account_value_on_date: 日期账户价值
+    confirmation_contents:
+      investment_will_update: "这将在 %{date} %{action} 账户价值为："
+      total_account_value: 账户总价值
+      holdings_value: 持仓价值
+      brokerage_cash: 经纪现金
+      account_balance: 账户余额
+      credit_card_balance: 信用卡余额
+      loan_balance: 贷款余额
+      property_value: 房产价值
+      vehicle_value: 车辆价值
+      crypto_balance: 加密货币余额
+      asset_value: 资产价值
+      liability_balance: 负债余额
+      balance: 余额
+      on_date: "在 %{date} 为"
+      recalculate_notice: "所有未来的交易和余额将根据此%{type}重新计算。"
+      change: 更改
+      update: 更新

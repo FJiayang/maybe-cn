@@ -179,7 +179,7 @@ class Sync < ApplicationRecord
 
     def window_valid
       if window_start_date && window_end_date && window_start_date > window_end_date
-        errors.add(:window_end_date, "must be greater than window_start_date")
+        errors.add(:window_end_date, :must_be_greater_than_start_date)
       end
     end
 

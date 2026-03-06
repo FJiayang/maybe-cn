@@ -9,3 +9,12 @@ zh-CN:
         date: 日期
     models:
       transfer: 转账
+    errors:
+      models:
+        transfer:
+          attributes:
+            base:
+              must_be_from_different_accounts: 必须来自不同账户
+              must_be_from_same_family: 必须来自同一家庭
+              must_have_opposite_amounts: 金额必须相反
+              must_be_within_4_days: 必须在 4 天内

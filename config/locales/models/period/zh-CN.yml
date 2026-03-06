@@ -1,0 +1,12 @@
+---
+zh-CN:
+  activemodel:
+    errors:
+      models:
+        period:
+          attributes:
+            start_date:
+              must_be_valid_date: 必须是有效的日期，收到的是 %{value}
+              must_be_before_end_date: 必须早于结束日期
+            end_date:
+              must_be_valid_date: 必须是有效的日期，收到的是 %{value}

@@ -10,5 +10,7 @@ zh-CN:
       title: 未找到条目
     loading:
       loading: 正在加载条目...
+    selection_bar:
+      delete: 删除
     update:
       success: 条目已更新

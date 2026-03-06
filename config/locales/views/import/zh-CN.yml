@@ -9,24 +9,76 @@ zh-CN:
         copy_paste: 复制粘贴
         account_optional: 账户（可选）
         multi_account_import: 多账户导入
+        browse: 浏览
+        browse_hint: 在此添加你的 CSV 文件
+        upload_csv_btn: 上传 CSV
+        paste_hint: 在此粘贴你的 CSV 文件内容
+        download_sample: 下载示例 CSV
+        sample_hint: 查看所需的 CSV 格式
     cleans:
       show:
         title: 清理你的数据
         description: 在下方表格中编辑你的数据。红色单元格为无效数据。
         errors_notice: 你的数据中有错误。将鼠标悬停在错误上以查看详情。
         errors_notice_mobile: 你的数据中有错误。点击错误提示以查看详情。
+        data_cleaned: 你的数据已清理完成
+        next_step: 下一步
+        all_rows: 所有行
+        error_rows: 错误行
     configurations:
       show:
         title: 配置你的导入
         description: 选择对应每个 CSV 字段的列。
+        template_found: 发现模板配置
+        template_description: 我们找到了该账户之前导入的配置。你想将其应用到本次导入吗？
+        manually_configure: 手动配置
+        apply_template: 应用模板
+        sample_data: 上传的 CSV 示例数据
       transaction_import:
         date_format_label: 日期格式
         date: 日期
+        select_column: 选择列
+        select_format: 选择格式
         amount: 金额
+        default: 默认
+        currency: 货币
+        format: 格式
+        amount_type_strategy: 金额类型策略
+        select_strategy: 选择策略
+        amount_type: 金额类型
+        select_convention: 选择约定
+        incomes_positive: 收入为正
+        incomes_negative: 收入为负
+        set: 设置
+        as_amount_type_column: 为金额类型列
+        as_income_value: 为"收入"（流入）值
+        leave_empty: 留空
+        account: 账户
+        name: 名称
+        category: 分类
+        tags: 标签
+        notes: 备注
+        apply_configuration: 应用配置
       trade_import:
         date_format_label: 日期格式
-      mint_import:
-        date_format_label: 日期格式
+        select_column: 选择列
+        date: 日期
+        quantity: 数量
+        buys_positive: 买入为正数量
+        buys_negative: 买入为负数量
+        default: 默认
+        currency: 货币
+        format: 格式
+        select_format: 选择格式
+        ticker: 股票代码
+        leave_empty: 留空
+        stock_exchange_code: 交易所代码
+        price: 价格
+        account: 账户
+        name: 名称
+        note: "注意："
+        security_provider_note: 证券价格提供程序未配置。你的交易导入可以正常工作，但 Maybe 不会回填价格历史记录。请前往设置进行配置。
+        apply_configuration: 应用配置
     confirms:
       show:
         account_mapping_title: 分配你的账户
@@ -37,6 +89,7 @@ zh-CN:
         category_mapping_description: 将你导入文件中的所有分类分配给 Maybe 的现有分类。你也可以添加新分类或保持未分类。
         tag_mapping_title: 分配你的标签
         tag_mapping_description: 将你导入文件中的所有标签分配给 Maybe 的现有标签。你也可以添加新标签或保持未分类。
+        step_number: "第 %{number} 步"
       mappings:
         create_account: 创建账户
         csv_mapping_label: "CSV 中的 %{mapping}"

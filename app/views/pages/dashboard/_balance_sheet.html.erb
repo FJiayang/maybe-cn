@@ -117,8 +117,8 @@
             icon: classification_group.icon,
           ) %>
 
-          <p class="text-primary text-sm font-medium mb-1 mt-4"><%= t(".no_classification_yet", classification: classification_group.name) %></p>
-          <p class="text-secondary text-sm text-center"><%= t(".add_classification_accounts", classification: classification_group.name.downcase) %></p>
+          <p class="text-primary text-sm font-medium mb-1 mt-4"><%= t(".no_data_title", name: classification_group.name) %></p>
+          <p class="text-secondary text-sm text-center"><%= t(".no_data_description", name: classification_group.name) %></p>
         </div>
       <% end %>
     </div>

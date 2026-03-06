@@ -1,0 +1,8 @@
+---
+en:
+  accounts:
+    sync_all:
+      notice: Syncing accounts...
+    destroy:
+      notice: Account scheduled for deletion
+      alert: Cannot delete linked account

@@ -26,26 +26,26 @@
 
       <div class="space-y-3">
         <% [
-          { icon: "layers", label: t(".goal_unified_accounts"), value: "unified_accounts" },
-          { icon: "banknote", label: t(".goal_cashflow"), value: "cashflow" },
-          { icon: "pie-chart", label: t(".goal_budgeting"), value: "budgeting" },
-          { icon: "users", label: t(".goal_partner"), value: "partner" },
-          { icon: "area-chart", label: t(".goal_investments"), value: "investments" },
-          { icon: "bot", label: t(".goal_ai_insights"), value: "ai_insights" },
-          { icon: "settings-2", label: t(".goal_optimization"), value: "optimization" },
-          { icon: "frown", label: t(".goal_reduce_stress"), value: "reduce_stress" }
+          { icon: "layers", value: "unified_accounts" },
+          { icon: "banknote", value: "cashflow" },
+          { icon: "pie-chart", value: "budgeting" },
+          { icon: "users", value: "partner" },
+          { icon: "area-chart", value: "investments" },
+          { icon: "bot", value: "ai_insights" },
+          { icon: "settings-2", value: "optimization" },
+          { icon: "frown", value: "reduce_stress" }
         ].each do |goal| %>
           <label class="flex items-center gap-2.5 p-4 rounded-lg border border-tertiary cursor-pointer hover:bg-container transition-colors [&:has(input:checked)]:border-solid [&:has(input:checked)]:bg-container">
             <%= form.check_box :goals, { multiple: true, class: "sr-only" }, goal[:value], nil %>
             <%= icon goal[:icon] %>
-            <span class="text-primary text-sm"><%= goal[:label] %></span>
+            <span class="text-primary text-sm"><%= t(".#{goal[:value]}") %></span>
           </label>
         <% end %>
       </div>
 
       <div class="mt-6">
         <%= render DS::Button.new(
-          text: t("common.actions.next"),
+          text: t(".submit"),
           full_width: true
         ) %>
       </div>

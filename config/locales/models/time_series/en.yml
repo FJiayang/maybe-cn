@@ -1,0 +1,7 @@
+---
+en:
+  activemodel:
+    attributes:
+      time_series/value:
+        date: Date
+        value: Value

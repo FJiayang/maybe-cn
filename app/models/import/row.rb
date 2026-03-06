@@ -61,7 +61,7 @@ class Import::Row < ApplicationRecord
 
     def required_columns
       import.required_column_keys.each do |required_key|
-        errors.add(required_key, "is required") if self[required_key].blank?
+        errors.add(required_key, :is_required) if self[required_key].blank?
       end
     end
 
@@ -71,7 +71,7 @@ class Import::Row < ApplicationRecord
       parsed_date = Date.strptime(date, import.date_format) rescue nil
 
       if parsed_date.nil?
-        errors.add(:date, "must exactly match the format: #{import.date_format}")
+        errors.add(:date, :must_match_format, date_format: import.date_format)
         return
       end
 
@@ -79,7 +79,7 @@ class Import::Row < ApplicationRecord
       max_date = Date.current
 
       if parsed_date < min_date || parsed_date > max_date
-        errors.add(:date, "must be between #{min_date} and #{max_date}")
+        errors.add(:date, :must_be_between, min_date: min_date, max_date: max_date)
       end
     end
 
@@ -89,7 +89,7 @@ class Import::Row < ApplicationRecord
       begin
         Money::Currency.new(currency)
       rescue Money::Currency::UnknownCurrencyError
-        errors.add(:currency, "is not a valid currency code")
+        errors.add(:currency, :not_valid_currency_code)
       end
     end
 end

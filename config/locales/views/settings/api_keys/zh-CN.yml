@@ -1,15 +1,101 @@
 ---
 zh-CN:
   settings:
+    api_keys_controller:
+      success: API 密钥创建成功
+      revoked_successfully: API 密钥已成功撤销
+      revoke_failed: 撤销 API 密钥失败
+      scope_descriptions:
+        read_accounts: 查看账户
+        read_transactions: 查看交易
+        read_balances: 查看余额
+        write_transactions: 创建交易
     api_keys:
       show:
         page_title: API 密钥
+        # 成功创建后的显示
+        success_title: API 密钥创建成功
+        success_subtitle: 你的新 API 密钥已成功生成。
+        success_heading: API 密钥创建成功！
+        success_message: 你的新 API 密钥"%{name}"已创建完成，可以使用了。
+        your_api_key: 你的 API 密钥
+        key_help_text: 复制并安全存储此密钥。你需要使用它来验证 API 请求。
+        copy_key: 复制 API 密钥
+        key_details: 密钥详情
+        name_label: 名称
+        permissions_label: 权限
+        created_label: 创建时间
+        scope_read: 只读
+        scope_read_write: 读写
+        scope_read_accounts: 查看账户
+        scope_read_transactions: 查看交易
+        scope_read_balances: 查看余额
+        scope_write_transactions: 创建交易
+        usage_instructions_title: 如何使用你的 API 密钥
+        usage_instructions: 在发送请求时，将你的 API 密钥包含在 X-Api-Key 请求头中：
+        continue: 继续到 API 密钥设置
+        # 已有密钥时的显示
+        current_key_title: 你的 API 密钥
+        current_key_subtitle: 管理你的 API 密钥，用于程序化访问你的 Maybe 数据。
+        ago: 前
+        last_used_label: 最后使用
+        never_used: 从未使用
+        active: 活跃
+        regenerate_key: 创建新密钥
+        revoke_key: 撤销密钥
+        revoke_confirmation: 你确定要撤销此 API 密钥吗？
+        # 没有密钥时的显示
+        no_key_title: 创建你的 API 密钥
+        no_key_subtitle: 获取对你的 Maybe 数据的程序化访问权限
+        no_key_heading: 程序化访问你的账户数据
+        no_key_description: 生成一个 API 密钥来与你的应用程序集成，安全地访问你的财务数据。
+        what_you_can_do: API 密钥可以做什么：
+        feature_1: 访问你的账户和余额
+        feature_2: 查看交易历史
+        feature_3: 创建新交易
+        feature_4: 与第三方应用程序集成
+        create_api_key: 创建 API 密钥
       new:
-        title: 新建 API 密钥
+        page_title: 创建新 API 密钥
+        title: 创建新 API 密钥
+        subtitle: 生成一个新的 API 密钥来程序化访问你的 Maybe 数据。
         name_label: API 密钥名称
-        name_placeholder: 输入密钥名称
-        create: 创建
+        name_placeholder: 例如：我的预算应用、投资组合追踪器
+        name_help_text: 选择一个描述性的名称，以便稍后识别此密钥。
+        permissions_label: 权限
+        permissions_help_text: 选择此 API 密钥应具有的权限：
+        permission_read_only_label: 只读
+        permission_read_only_desc: 查看你的账户、交易和余额
+        permission_read_write_label: 读写
+        permission_read_write_desc: 查看你的数据并创建新交易
+        security_warning_title: 安全警告
+        security_warning_message: 你的 API 密钥在创建后只会显示一次。请确保复制并安全存储它。任何拥有此密钥的人都可以根据你选择的权限访问你的数据。
         cancel: 取消
+        create_key: 创建 API 密钥
+      created:
+        page_title: API 密钥已创建
+        success_title: API 密钥创建成功
+        success_subtitle: 你的新 API 密钥已成功生成。
+        success_heading: API 密钥创建成功！
+        success_message: 你的新 API 密钥"%{name}"已创建完成，可以使用了。
+        your_api_key: 你的 API 密钥
+        key_help_text: 复制并安全存储此密钥。你需要使用它来验证 API 请求。
+        copy_key: 复制 API 密钥
+        key_details: 密钥详情
+        name_label: 名称
+        permissions_label: 权限
+        created_label: 创建时间
+        scope_read: 只读
+        scope_read_write: 读写
+        scope_read_accounts: 查看账户
+        scope_read_transactions: 查看交易
+        scope_read_balances: 查看余额
+        scope_write_transactions: 创建交易
+        security_note_title: 重要安全提示
+        security_note_message: 这是你的 API 密钥唯一一次显示。请务必立即复制并安全存储。如果你丢失此密钥，将需要生成一个新的。
+        usage_instructions_title: 如何使用你的 API 密钥
+        usage_instructions: 在发送请求时，将你的 API 密钥包含在 X-Api-Key 请求头中：
+        continue: 继续到 API 密钥设置
       index:
         title: API 密钥
         new_key: 新建密钥
