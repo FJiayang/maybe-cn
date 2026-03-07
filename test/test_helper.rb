@@ -9,9 +9,6 @@ require_relative "../config/environment"
 
 ENV["RAILS_ENV"] ||= "test"
 
-# Force English locale for tests to ensure consistent assertion messages
-I18n.locale = :en
-
 # Set Plaid to sandbox mode for tests
 ENV["PLAID_ENV"] = "sandbox"
 ENV["PLAID_CLIENT_ID"] ||= "test_client_id"

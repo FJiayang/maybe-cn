@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  include RestoreLayoutPreferences, Onboardable, Localize, AutoSync, Authentication, Invitable,
+  include RestoreLayoutPreferences, Onboardable, Authentication, AutoSync, Localize, Invitable,
           SelfHostable, StoreLocation, Impersonatable, Breadcrumbable,
           FeatureGuardable, Notifiable
 
