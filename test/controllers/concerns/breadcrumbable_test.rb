@@ -34,10 +34,4 @@ class BreadcrumbableTest < ActionDispatch::IntegrationTest
       # Second breadcrumb is controller name titleized
     end
   end
-
-  private
-
-    def sign_in(user)
-      post sessions_path, params: { email: user.email, password: "password" }
-    end
 end
