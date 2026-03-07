@@ -11,7 +11,7 @@ class BreadcrumbableTest < ActionDispatch::IntegrationTest
   test "dashboard breadcrumbs are localized" do
     sign_in @user
 
-    I18n.with_locale("zh-CN") do
+    I18n.with_locale(:'zh-CN') do
       get root_path
       assert_response :success
 
@@ -25,7 +25,7 @@ class BreadcrumbableTest < ActionDispatch::IntegrationTest
   test "accounts breadcrumbs are localized" do
     sign_in @user
 
-    I18n.with_locale("zh-CN") do
+    I18n.with_locale(:'zh-CN') do
       get accounts_path
       assert_response :success
 
