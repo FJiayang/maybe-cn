@@ -10,6 +10,8 @@ module Localize
     def switch_locale(&action)
       locale = if Current.family&.locale
         Current.family.locale
+      elsif Rails.env.test? && I18n.locale != I18n.default_locale
+        I18n.locale
       elsif Rails.env.test?
         :en
       else
