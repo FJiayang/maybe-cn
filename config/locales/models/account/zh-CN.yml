@@ -1,5 +1,15 @@
 ---
 zh-CN:
+  accountables:
+    depository: 现金
+    crypto: 加密货币
+    investment: 投资
+    property: 房地产
+    vehicle: 车辆
+    credit_card: 信用卡
+    loan: 贷款
+    other_asset: 其他资产
+    other_liability: 其他负债
   activerecord:
     attributes:
       account:
@@ -12,7 +22,8 @@ zh-CN:
     models:
       account: 账户
       account/credit: 信用卡
-      account/depository: 银行账户
+      account/crypto: 加密货币
+      account/depository: 现金
       account/investment: 投资
       account/loan: 贷款
       account/other_asset: 其他资产

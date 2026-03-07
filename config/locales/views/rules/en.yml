@@ -13,3 +13,34 @@ en:
       toggle_sort: Toggle sort direction
       no_rules: No rules yet
       no_rules_description: Set up rules to perform actions to your transactions and other data on every account sync.
+    new:
+      back_to_rules: Back to rules
+      new_rule_title: "New %{resource} rule"
+    edit:
+      back_to_rules: Back to rules
+      edit_rule_title: "Edit %{resource} rule"
+      edit_rule_title_with_name: "Edit %{resource} rule \"%{name}\""
+    rule:
+      if: IF
+      then: THEN
+      for: FOR
+      reapply_rule: Reapply rule
+      more_conditions:
+        one: and %{count} more condition
+        other: and %{count} more conditions
+      more_actions:
+        one: and %{count} more action
+        other: and %{count} more actions
+      all_past_and_future: "All past and future %{resource}"
+      on_or_after: "%{resource} on or after %{date}"
+    form:
+      rule_name: Rule name (optional)
+      rule_name_placeholder: Enter a name for this rule
+      if: IF
+      then: THEN
+      for: FOR
+      add_condition: Add Condition
+      add_condition_group: Add Condition Group
+      add_action: Add Action
+      all_past_and_future: "All past and future %{resource}s"
+      starting_from: Starting from
