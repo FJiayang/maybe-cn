@@ -16,7 +16,7 @@ module Authentication
 
   private
     def authenticate_user!
-      if session_record = find_session_by_cookie
+      if session_record = Current.session || find_session_by_cookie
         Current.session = session_record
       else
         if self_hosted_first_login?
