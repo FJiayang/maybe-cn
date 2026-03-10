@@ -16,7 +16,7 @@ class AccountsDialogCloseTest < ApplicationSystemTestCase
 
     # Verify modal is open
     assert_selector "dialog[open]", wait: 5
-    assert_text "你想添加什么？"
+    assert_text "What would you like to add?"
 
     # Click the close button (X icon in top right)
     find("button[data-action*='DS--dialog#close']", match: :first).click
