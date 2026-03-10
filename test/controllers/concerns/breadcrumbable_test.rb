@@ -13,13 +13,15 @@ class BreadcrumbableTest < ActionDispatch::IntegrationTest
     @user.family.update!(locale: "zh-CN")
     sign_in @user
 
-    get root_path
-    assert_response :success
+    I18n.with_locale(:'zh-CN') do
+      get root_path
+      assert_response :success
 
-    # Check that breadcrumbs use translated values
-    breadcrumbs = @controller.instance_variable_get(:@breadcrumbs)
-    assert_equal "首页", breadcrumbs[0][0]
-    assert_equal "仪表板", breadcrumbs[1][0]
+      # Check that breadcrumbs use translated values
+      breadcrumbs = @controller.instance_variable_get(:@breadcrumbs)
+      assert_equal "首页", breadcrumbs[0][0]
+      assert_equal "仪表板", breadcrumbs[1][0]
+    end
   end
 
   test "accounts breadcrumbs are localized" do
@@ -27,11 +29,13 @@ class BreadcrumbableTest < ActionDispatch::IntegrationTest
     @user.family.update!(locale: "zh-CN")
     sign_in @user
 
-    get accounts_path
-    assert_response :success
+    I18n.with_locale(:'zh-CN') do
+      get accounts_path
+      assert_response :success
 
-    breadcrumbs = @controller.instance_variable_get(:@breadcrumbs)
-    assert_equal "首页", breadcrumbs[0][0]
-    # Second breadcrumb is controller name titleized
+      breadcrumbs = @controller.instance_variable_get(:@breadcrumbs)
+      assert_equal "首页", breadcrumbs[0][0]
+      # Second breadcrumb is controller name titleized
+    end
   end
 end
