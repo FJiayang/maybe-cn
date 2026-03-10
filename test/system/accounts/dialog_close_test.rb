@@ -1,6 +1,6 @@
 require "application_system_test_case"
 
-class Accounts::DialogCloseTest < ApplicationSystemTestCase
+class AccountsDialogCloseTest < ApplicationSystemTestCase
   setup do
     sign_in @user = users(:family_admin)
     Family.any_instance.stubs(:get_link_token).returns("test-link-token")
