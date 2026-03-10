@@ -1,6 +1,47 @@
 ---
 zh-CN:
   activemodel:
+    labels:
+      period:
+        last_day:
+          label: 最近 1 天
+          label_short: 1天
+          comparison_label: 与昨天相比
+        current_week:
+          label: 本周
+          label_short: 本周
+          comparison_label: 与周初相比
+        last_7_days:
+          label: 最近 7 天
+          label_short: 7天
+          comparison_label: 与上周相比
+        current_month:
+          label: 本月
+          label_short: 本月
+          comparison_label: 与月初相比
+        last_30_days:
+          label: 最近 30 天
+          label_short: 30天
+          comparison_label: 与上月相比
+        last_90_days:
+          label: 最近 90 天
+          label_short: 90天
+          comparison_label: 与上季度相比
+        current_year:
+          label: 今年
+          label_short: 今年
+          comparison_label: 与年初相比
+        last_365_days:
+          label: 最近 365 天
+          label_short: 365天
+          comparison_label: 与一年前相比
+        last_5_years:
+          label: 最近 5 年
+          label_short: 5年
+          comparison_label: 与 5 年前相比
+        custom:
+          label: 自定义周期
+          label_short: 自定义
     errors:
       models:
         period:

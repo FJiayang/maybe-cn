@@ -57,4 +57,46 @@ class PeriodTest < ActiveSupport::TestCase
     expected = "#{start_date.strftime("%b %d, %Y")} to #{end_date.strftime("%b %d, %Y")}"
     assert_equal expected, period.comparison_label
   end
+
+  test "label returns Chinese label when locale is zh-CN" do
+    I18n.with_locale(:'zh-CN') do
+      period = Period.from_key("last_30_days")
+      assert_equal "最近 30 天", period.label
+    end
+  end
+
+  test "label_short returns Chinese short label when locale is zh-CN" do
+    I18n.with_locale(:'zh-CN') do
+      period = Period.from_key("last_30_days")
+      assert_equal "30天", period.label_short
+    end
+  end
+
+  test "comparison_label returns Chinese comparison label when locale is zh-CN" do
+    I18n.with_locale(:'zh-CN') do
+      period = Period.from_key("last_30_days")
+      assert_equal "与上月相比", period.comparison_label
+    end
+  end
+
+  test "all period labels are translated in zh-CN" do
+    I18n.with_locale(:'zh-CN') do
+      expected_labels = {
+        "last_day" => "最近 1 天",
+        "current_week" => "本周",
+        "last_7_days" => "最近 7 天",
+        "current_month" => "本月",
+        "last_30_days" => "最近 30 天",
+        "last_90_days" => "最近 90 天",
+        "current_year" => "今年",
+        "last_365_days" => "最近 365 天",
+        "last_5_years" => "最近 5 年"
+      }
+
+      expected_labels.each do |key, expected_label|
+        period = Period.from_key(key)
+        assert_equal expected_label, period.label, "Expected #{key} to translate to #{expected_label}"
+      end
+    end
+  end
 end

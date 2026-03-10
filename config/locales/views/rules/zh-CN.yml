@@ -13,3 +13,34 @@ zh-CN:
       toggle_sort: 切换排序方向
       no_rules: 暂无规则
       no_rules_description: 设置规则以便在每次账户同步时对交易和其他数据执行操作。
+    new:
+      back_to_rules: 返回规则列表
+      new_rule_title: 新建%{resource}规则
+    edit:
+      back_to_rules: 返回规则列表
+      edit_rule_title: 编辑%{resource}规则
+      edit_rule_title_with_name: 编辑%{resource}规则"%{name}"
+    rule:
+      if: 条件
+      then: 则
+      for: 适用于
+      reapply_rule: 重新应用规则
+      more_conditions:
+        one: 以及其他 %{count} 个条件
+        other: 以及其他 %{count} 个条件
+      more_actions:
+        one: 以及其他 %{count} 个操作
+        other: 以及其他 %{count} 个操作
+      all_past_and_future: 所有过去和未来的%{resource}
+      on_or_after: "%{date} 及之后的%{resource}"
+    form:
+      rule_name: 规则名称（可选）
+      rule_name_placeholder: 为此规则输入一个名称
+      if: 条件
+      then: 则
+      for: 适用于
+      add_condition: 添加条件
+      add_condition_group: 添加条件组
+      add_action: 添加操作
+      all_past_and_future: 所有过去和未来的%{resource}
+      starting_from: 从此日期开始

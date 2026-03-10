@@ -1,6 +1,6 @@
 require "application_system_test_case"
 
-class Settings::ApiKeysTest < ApplicationSystemTestCase
+class SettingsApiKeysTest < ApplicationSystemTestCase
   setup do
     @user = users(:family_admin)
     @user.api_keys.destroy_all # Ensure clean state
